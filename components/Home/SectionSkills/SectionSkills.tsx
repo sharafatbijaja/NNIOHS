@@ -8,9 +8,9 @@ const SectionSkills = () => {
     <div className="py-25 bg-gray-50/50 dark:bg-gray-950">
       {/* Section Heading */}
       <SectionHeading
-        title1="My"
-        title2="Skills"
-        description="We are a team of passionate individuals dedicated to providing the best services to our customers."
+        title1="Our"
+        title2="Programs"
+        description="Naz Nursing Institute offers comprehensive nursing education programs designed to shape compassionate healthcare professionals."
       />
 
       {/* Skills Grid */}
@@ -19,7 +19,7 @@ const SectionSkills = () => {
           return (
             <div key={category.title}>
               <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
-                <span className="text-blue-500">•</span>
+                <span className="text-green-500">•</span>
                 {category.title}
               </h3>
 

@@ -1,5 +1,8 @@
 import {
   Briefcase,
+  BookOpen,
+  Building,
+  ClipboardCheck,
   Cloud,
   Code2,
   Coffee,
@@ -8,6 +11,8 @@ import {
   GitBranch,
   Globe,
   GraduationCap,
+  HeartPulse,
+  Hospital,
   Layers,
   Layout,
   Mail,
@@ -16,57 +21,62 @@ import {
   Phone,
   Server,
   Smartphone,
+  Stethoscope,
   Terminal,
+  Truck,
+  Users,
+  BedDouble,
+  Bandage,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 
 export const stats = [
-  { label: "Years Experience", value: "5+" },
-  { label: "Projects Completed", value: "50+" },
-  { label: "Happy Clients", value: "30+" },
-  { label: "Students Taught", value: "1000+" },
+  { label: "Years Established", value: "7+" },
+  { label: "Students Graduated", value: "500+" },
+  { label: "Faculty Members", value: "20+" },
+  { label: "Hospital Affiliates", value: "5+" },
 ];
 
 export const highlights = [
-  { icon: MapPin, text: "Based in San Francisco, CA" },
-  { icon: Briefcase, text: "Open for freelance work" },
-  { icon: GraduationCap, text: "CS Graduate from Stanford" },
-  { icon: Coffee, text: "Powered by coffee & curiosity" },
+  { icon: MapPin, text: "Karachi, Pakistan" },
+  { icon: Briefcase, text: "DUHS Affiliated Program" },
+  { icon: GraduationCap, text: "PNMC Recognized Institute" },
+  { icon: Coffee, text: "Excellence in Nursing Education" },
 ];
 
 export const userReviewData = [
   {
     id: 1,
-    name: "John Doe",
-    profession: "Real Estate Agent",
+    name: "Ayesha Khan",
+    profession: "BS Nursing Graduate",
     userImage: "/images/u1.jpg",
     review:
-      "A wonderful experience! The platform made it easy to find exactly what I needed. lorem ipsum dolor sit ame",
+      "Excellent education and practical training at NNIOHS prepared me for a successful nursing career.",
   },
   {
     id: 2,
-    name: "Mike Smith",
-    profession: "Business Owner",
+    name: "Fatima Ali",
+    profession: "CNA Program Graduate",
     userImage: "/images/u2.jpg",
     review:
-      "Great selection of properties and seamless process. Highly recommended for anyone looking to invest.",
+      "The faculty is highly qualified and supportive. Best decision to join NNIOHS for my nursing education.",
   },
   {
     id: 3,
-    name: "Alex Johnson",
-    profession: "Web developer",
+    name: "Ahmed Hassan",
+    profession: "Healthcare Professional",
     userImage: "/images/u3.jpg",
     review:
-      "The website helped me find my dream home quickly and hassle-free. Exceptional service!",
+      "NNIOHS graduates are well-prepared and skilled. We hire many of their students at our hospital.",
   },
   {
     id: 4,
-    name: "Emily Clark",
-    profession: "Interior Designer",
+    name: "Sara Ahmed",
+    profession: "Nursing Student",
     userImage: "/images/u4.jpg",
     review:
-      "Fantastic range of properties with clear details. The best platform for home and design inspiration!",
+      "Amazing clinical training opportunities and modern facilities make NNIOHS the best choice.",
   },
 ];
 
@@ -74,173 +84,171 @@ export const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@johndoe.dev",
-    href: "mailto:hello@johndoe.dev",
+    value: "naznursing456@gmail.com",
+    href: "mailto:naznursing456@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "0312-2815799",
+    href: "tel:03122815799",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Karachi, Pakistan",
     href: "#",
   },
 ];
 
 export const socialLinks = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: FaLinkedinIn, href: "https://facebook.com", label: "Facebook" },
+  { icon: FaTwitter, href: "https://instagram.com", label: "Instagram" },
 ];
 
 export const experiences = [
   {
     type: "work",
-    title: "Senior Full-Stack Developer",
-    company: "TechCorp Inc.",
-    period: "2022 - Present",
+    title: "Institute Establishment",
+    company: "Naz Nursing Institute",
+    period: "2017 - Present",
     description:
-      "Leading development of enterprise SaaS products. Mentoring junior developers and implementing best practices.",
-    technologies: ["React", "Node.js", "AWS", "TypeScript"],
+      "Established premier nursing education institution in Karachi under Waseem Welfare Trust, affiliated with DUHS and PNMC.",
+    technologies: ["Education", "Healthcare", "Leadership", "Quality"],
   },
   {
     type: "work",
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
-    period: "2020 - 2022",
+    title: "DUHS Affiliation",
+    company: "Dow University of Health Sciences",
+    period: "2018 - Present",
     description:
-      "Built and maintained multiple web applications. Collaborated with design team to implement responsive UIs.",
-    technologies: ["Vue.js", "Python", "PostgreSQL", "Docker"],
+      "Achieved affiliation with Dow University of Health Sciences for Generic BS Nursing program, ensuring academic excellence.",
+    technologies: ["Academic", "Partnership", "Excellence", "Recognition"],
   },
   {
     type: "education",
-    title: "Master of Computer Science",
-    company: "Stanford University",
-    period: "2018 - 2020",
+    title: "PNMC Recognition",
+    company: "Pakistan Nursing Council",
+    period: "2017 - Present",
     description:
-      "Specialized in distributed systems and machine learning. Thesis on scalable microservices architecture.",
-    technologies: ["Research", "AI/ML", "Distributed Systems"],
+      "Received full recognition from Pakistan Nursing & Midwifery Council, meeting all national education standards.",
+    technologies: ["Accreditation", "Standards", "Compliance", "Quality"],
   },
   {
     type: "work",
-    title: "Junior Developer",
-    company: "WebAgency Co.",
-    period: "2018 - 2020",
+    title: "Clinical Partnership",
+    company: "Civil Hospital Karachi",
+    period: "2019 - Present",
     description:
-      "Developed client websites and e-commerce platforms. Gained experience in agile methodologies.",
-    technologies: ["JavaScript", "PHP", "MySQL", "WordPress"],
+      "Established clinical training partnership with Dr. Ruth K.M. Pfau Civil Hospital for hands-on student training.",
+    technologies: ["Clinical", "Training", "Partnership", "Practical"],
   },
   {
     type: "education",
-    title: "Bachelor of Computer Science",
-    company: "UC Berkeley",
-    period: "2014 - 2018",
+    title: "BS Nursing Program Launch",
+    company: "NNIOHS Academic Department",
+    period: "2018 - Present",
     description:
-      "Strong foundation in algorithms, data structures, and software engineering principles.",
-    technologies: ["Computer Science", "Mathematics", "Problem Solving"],
+      "Successfully launched 4-year Generic BS Nursing program with comprehensive curriculum and expert faculty.",
+    technologies: ["Curriculum", "Faculty", "Program", "Success"],
   },
 ];
 
 export const footerSocialLinks = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: FaLinkedin, href: "https://facebook.com", label: "Facebook" },
+  { icon: FaTwitter, href: "https://instagram.com", label: "Instagram" },
+  { icon: Mail, href: "mailto:naznursing456@gmail.com", label: "Email" },
 ];
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "BS Nursing Program",
     description:
-      "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
+      "4-year degree program affiliated with Dow University of Health Sciences, preparing professional nurses for healthcare leadership.",
     image: "/images/p1.jpg",
-    techStack: ["Next.js", "TypeScript", "Stripe", "MongoDB"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    techStack: ["DUHS", "PNMC", "4 Years", "Degree"],
+    demoUrl: "/admissions",
+    githubUrl: "/admissions",
   },
   {
-    title: "Task Management App",
+    title: "CNA Diploma Program",
     description:
-      "Collaborative project management tool with real-time updates, Kanban boards, and team analytics.",
+      "2-year Certified Nursing Assistant program focusing on basic patient care, vital signs, and clinical assistance skills.",
     image: "/images/p2.jpg",
-    techStack: ["React", "Node.js", "Socket.io", "PostgreSQL"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    techStack: ["2 Years", "Diploma", "Clinical", "Certification"],
+    demoUrl: "/admissions",
+    githubUrl: "/admissions",
   },
   {
-    title: "AI Content Generator",
+    title: "Clinical Training",
     description:
-      "GPT-powered content creation platform for marketers with templates and workflow automation.",
+      "Hands-on training at Dr. Ruth K.M. Pfau Civil Hospital Karachi with exposure to all major medical departments.",
     image: "/images/p3.jpg",
-    techStack: ["React", "Python", "OpenAI", "FastAPI"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    techStack: ["Civil Hospital", "Practical", "Rotations", "Experience"],
+    demoUrl: "/facilities",
+    githubUrl: "/facilities",
   },
   {
-    title: "Real Estate Platform",
+    title: "Modern Skills Lab",
     description:
-      "Property listing platform with virtual tours, mortgage calculator, and agent booking system.",
+      "State-of-the-art nursing skills lab equipped with modern mannequins and medical equipment for practical training.",
     image: "/images/p4.jpg",
-    techStack: ["Vue.js", "Node.js", "MongoDB", "Maps API"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    techStack: ["Equipment", "Mannequins", "Practice", "Safety"],
+    demoUrl: "/facilities",
+    githubUrl: "/facilities",
   },
   {
-    title: "Fitness Tracker",
+    title: "Student Hostel",
     description:
-      "Cross-platform mobile app for workout tracking, nutrition logging, and progress analytics.",
+      "Separate hostel facilities for boys and girls with limited seats, providing safe and comfortable accommodation.",
     image: "/images/p5.jpg",
-    techStack: ["React Native", "Firebase", "Node.js", "Charts"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    techStack: ["Accommodation", "Security", "Limited Seats", "Comfort"],
+    demoUrl: "/facilities",
+    githubUrl: "/facilities",
   },
   {
-    title: "Learning Management System",
+    title: "Library & Resources",
     description:
-      "Educational platform with video streaming, quizzes, progress tracking, and certificates.",
+      "Well-equipped library with nursing textbooks, medical journals, and digital resources for comprehensive learning.",
     image: "/images/p6.jpg",
-    techStack: ["Next.js", "Prisma", "AWS S3", "Stripe"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    techStack: ["Books", "Journals", "Digital", "Research"],
+    demoUrl: "/facilities",
+    githubUrl: "/facilities",
   },
 ];
 
 export const skillCategories = [
   {
-    title: "Frontend",
+    title: "Academic Programs",
     skills: [
-      { name: "React", icon: Code2 },
-      { name: "Next.js", icon: Globe },
-      { name: "TypeScript", icon: Terminal },
-      { name: "Tailwind CSS", icon: Palette },
-      { name: "React Native", icon: Smartphone },
-      { name: "Vue.js", icon: Layout },
+      { name: "BS Nursing", icon: GraduationCap },
+      { name: "CNA Program", icon: BookOpen },
+      { name: "Post RN BSN", icon: ClipboardCheck },
+      { name: "Diploma Courses", icon: Layers },
+      { name: "Workshops", icon: Layout },
+      { name: "Seminars", icon: Globe },
     ],
   },
   {
-    title: "Backend",
+    title: "Clinical Skills",
     skills: [
-      { name: "Node.js", icon: Server },
-      { name: "Express", icon: Layers },
-      { name: "MongoDB", icon: Database },
-      { name: "PostgreSQL", icon: Database },
-      { name: "GraphQL", icon: Cpu },
-      { name: "REST APIs", icon: Cloud },
+      { name: "Patient Care", icon: Stethoscope },
+      { name: "Emergency Care", icon: HeartPulse },
+      { name: "Surgical Assistance", icon: Bandage },
+      { name: "Pediatric Care", icon: Users },
+      { name: "Maternal Health", icon: Hospital },
+      { name: "Mental Health", icon: HeartPulse },
     ],
   },
   {
-    title: "Tools & Others",
+    title: "Facilities & Resources",
     skills: [
-      { name: "Git", icon: GitBranch },
-      { name: "Docker", icon: Server },
-      { name: "AWS", icon: Cloud },
-      { name: "Linux", icon: Terminal },
-      { name: "Figma", icon: Palette },
-      { name: "CI/CD", icon: Cpu },
+      { name: "Skills Lab", icon: Cpu },
+      { name: "Computer Lab", icon: Server },
+      { name: "Library", icon: BookOpen },
+      { name: "Hostel", icon: BedDouble },
+      { name: "Transport", icon: Truck },
+      { name: "Hospital Training", icon: Hospital },
     ],
   },
 ];

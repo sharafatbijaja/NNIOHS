@@ -10,8 +10,8 @@ const Hero = () => {
       className="mt-16 w-full h-190 flex items-center justify-center text-4xl font-bold
               text-gray-800 dark:text-gray-100
               bg-linear-to-br 
-              from-blue-50 via-purple-100 to-white
-              dark:from-gray-800 dark:via-blue-950 dark:to-gray-900"
+              from-green-50 via-purple-100 to-white
+              dark:from-gray-800 dark:via-green-950 dark:to-gray-900"
     >
       {/* Hero Content */}
 
@@ -29,9 +29,9 @@ const Hero = () => {
 
           {/* Title */}
           {/* <h1 className='text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6'>
-          Hi, I'm <span className='text-blue-600 dark:text-blue-400 text-nowrap'>Sharafat Ali</span>
+          Hi, I'm <span className='text-green-600 dark:text-green-400 text-nowrap'>Sharafat Ali</span>
           </h1>
- <div className='text-xl sm:text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-bold mb-4 ms:mb-8 h-12'>
+ <div className='text-xl sm:text-2xl md:text-3xl text-green-600 dark:text-green-400 font-bold mb-4 ms:mb-8 h-12'>
             <TypeAnimation
               sequence={[
                 'Frontend Developer',
@@ -51,25 +51,25 @@ const Hero = () => {
           </div> */}
 
           <h1 data-aos="fade-down" data-aos-delay="100" className="text-5xl sm:text-5xl md:text-6xl lg:text-6xl font-bold mb-6">
-            Naz Nurnsing Institute{" "}
-            <span className="text-blue-600 dark:text-blue-400">
-              Health Sciences
+            Welcome to Naz Nursing Institute{" "}
+            <span className="text-green-600 dark:text-green-400">
+              of Health Sciences
             </span>
           </h1>
 
           {/* TypeWriting Effects */}
-          <div data-aos="fade-up" data-aos-delay="200" className="pt-5 text-xl sm:text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-4 ms:mb-8 h-12">
+          <div data-aos="fade-up" data-aos-delay="200" className="pt-5 text-xl sm:text-2xl md:text-3xl text-green-600 dark:text-green-400 font-semibold mb-4 ms:mb-8 h-12">
             <TypeAnimation
               sequence={[
-                "Future Nurses",
+                "Shaping Compassionate Nurses",
                 2000,
-                "Excellenct Education",
+                "Excellence in Healthcare",
                 2000,
-                "Compassionate Care",
+                "Since 2017",
                 2000,
-                "Skilled Hands",
+                "DUHS Affiliated",
                 2000,
-                "Join Us in Healthcare",
+                "Future Healthcare Leaders",
                 2000,
               ]}
               wrapper="span"
@@ -81,26 +81,34 @@ const Hero = () => {
 
           {/* Paragraph and Buttons */}
           <p className="pt-8 text-sm text-gray-600 dark:text-gray-300 mb-8">
-            Welcome to NNIOHS, where we nurture future nurses and provide
-            excellent nursing education.
+            A Project of Naz General Hospital | Affiliated with Dow University of Health Sciences (DUHS)
+            <br />
+            Generic BS Nursing (4 Years) & CNA (2 Years) Programs
           </p>
 
           <div data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-delay="2000" className="flex sm:flex-row gap-4 justify-center">
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine" data-aos-delay="1000" className="flex sm:flex-row gap-4 justify-center">
             <Button size={"lg"} asChild className="w-fit ">
               <a href="">
                 <FolderOpen className="w-5 h-5 mr-2" />
-                Button One
+                Apply Now (Admission 2026)
               </a>
             </Button>
             <Button variant={"link"} size={"lg"} asChild className="w-fit">
               <a href="">
                 <ArrowRight className="w-5 h-5 mr-2" />
-                Button Two
+                Explore Programs
               </a>
             </Button>
           </div>
+        </div>
+        
+        {/* Tagline below */}
+        <div className="text-center mt-8">
+          <p className="text-sm text-gray-600 dark:text-gray-300 italic">
+            "Excellence in Nursing Education | Hands-on Training at Dr. Ruth K.M. Pfau Civil Hospital Karachi"
+          </p>
         </div>
       </div>
     </div>

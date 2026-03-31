@@ -59,7 +59,7 @@ useEffect(() => {
         <div className="flex items-center space-x-4">
           {/* ThemeToggler */}
           <ThemeToggler />
-          <a href="#" className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all">
+          <a href="#" className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-all">
 
             <span className="relative z-20 flex space-x-2 text-sm">
               <span>Button</span>

@@ -8,13 +8,13 @@ const Project = () => {
     <div className='py-16 bg-gray-50 dark:bg-gray-900'>
       <SectionHeading
         title1='Featured'
-        title2='Projects'
-        description='Check out some of my latest projects'
+        title2='Programs'
+        description='Explore our academic programs and facilities'
       />
       <div className='container grid md:grid-cols-2 lg:grid-cols-3 gap-12 w-[80%] mx-auto mt-8'>
         {projects.map((project, index) => {
           return <div key={index}>
-            <ProjectCard {...project} />
+            <ProjectCard {...project} />  
           </div>
         })}
 

@@ -12,7 +12,7 @@ const SectionAbout = () => {
         <SectionHeading
           title1="About"
           title2="NNIOHS"
-          description="We are a team of passionate individuals dedicated to providing the best services to our customers."
+          description="Naz Nursing Institute of Health Sciences, established in 2017 by Waseem Welfare Trust, is a premier nursing education institution in Karachi."
         />
       </div>
 
@@ -31,27 +31,21 @@ const SectionAbout = () => {
         {/* Text Content */}
         <div>
           <h3 className="text-3xl font-semibold mb-4">
-            A passionate developer who loves to create
+            Premier Nursing Education Institution
           </h3>
           <p className="text-gray-700 dark:text-gray-300 mb-6 pt-6">
-            I am a full-stack developer with over 5 years of experience building
-            web applications. My journey started with curiosity about how
-            websites work, and it has evolved into a passion for creating
-            seamless, user-focused digital experiences.
+            Naz Nursing Institute of Health Sciences, established in 2017 by Waseem Welfare Trust, is a premier nursing education institution in Karachi. As a project of Naz General Hospital, we are committed to producing highly skilled, ethical, and compassionate nursing professionals who serve the healthcare needs of Pakistan and beyond.
           </p>
           <p className="text-gray-700 dark:text-gray-300">
-            Beyond coding, I'm dedicated to sharing knowledge. I've taught over
-            1000 students through online courses and mentorship programs. I
-            believe in continuous learning and staying updated with the latest
-            technologies.
+            Our institute is fully recognized by Pakistan Nursing & Midwifery Council (PNMC) and affiliated with Dow University of Health Sciences (DUHS) and Sindh Nursing Examination Board.
           </p>
 
-          {/* Highlights */}
+          {/* Key Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-8">
             {highlights.map((item) => (
               <div key={item.text} className="flex items-center text-sm">
-                <div className="w-8 h-8 text-blue-500/10 flex items-center justify-center">
-                  <item.icon className="w-4 h-4 text-blue-500" />
+                <div className="w-8 h-8 text-green-500/10 flex items-center justify-center">
+                  <item.icon className="w-4 h-4 text-green-500" />
                 </div>
                 <span className="text-muted-foreground">{item.text}</span>
               </div>
@@ -68,7 +62,7 @@ const SectionAbout = () => {
                 key={stat.label}
                 className="bg-white dark:bg-gray-800 shadow rounded-xl p-6 text-center"
               >
-                <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-green-500 mb-2">
                   {stat.value}
                 </div>
                 <div className="text-gray-600 dark:text-gray-400">

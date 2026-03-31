@@ -34,8 +34,8 @@ const SectionContact = () => {
                         target="_blank"
                         className="flex items-center gap-4 p-4 bg-white dark:bg-gray-900 shadow-md rounded-xl hover:scale-105 transition-all duration-300 group"
                       >
-                        <div className="w-12 h-12 rounded-lg bg-blue-600/10 flex justify-center group-hover:bg-blue-500/20 transition-colors items-center">
-                          <item.icon className="w-5 h-5 text-blue-600 dark:text-white" />
+                        <div className="w-12 h-12 rounded-lg bg-green-600/10 flex justify-center group-hover:bg-green-500/20 transition-colors items-center">
+                          <item.icon className="w-5 h-5 text-green-600 dark:text-white" />
                         </div>
                         <div>
                           <p className="text-sm text-muted-foreground">
@@ -56,7 +56,7 @@ const SectionContact = () => {
                           href={link.href}
                           key={link.label}
                           target="_blank"
-                          className="w-12 h-12 rounded-lg bg-white dark:bg-gray-900 shadow-md flex items-center justify-center text-muted-foreground hover:text-blue-700 dark:hover:text-white transition-colors group-hover:bg-blue-500/20"
+                          className="w-12 h-12 rounded-lg bg-white dark:bg-gray-900 shadow-md flex items-center justify-center text-muted-foreground hover:text-green-700 dark:hover:text-white transition-colors group-hover:bg-green-500/20"
                         >
                           {/* icon ya text yahan */}
                           <link.icon className="w-5 h-5" />

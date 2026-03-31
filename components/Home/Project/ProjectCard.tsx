@@ -33,7 +33,7 @@ const ProjectCard = ({
       </div>
       {/* main content */}
       <div className="p-4">
-        <h3 className="text-xl text-black dark:text-white font-semibold mb-2 group-hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+        <h3 className="text-xl text-black dark:text-white font-semibold mb-2 group-hover:text-green-800 transition-colors duration-300 cursor-pointer">
           {title}
         </h3>
         <p className="text-gray-600 dark:text-gray-400">{description}</p>
