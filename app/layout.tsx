@@ -15,7 +15,7 @@ const font = Inter({
 
 // SEO Metadata - Critical for search engine optimization
 export const metadata: Metadata = {
-  // title: "Sharafat Bijaja", 
+  // title: "Bijaja", 
   title: "Naz Nursing Institute Karachi", // Page title for browser tab and search results
   description: "Web Developer, UI/UX Designer", // Meta description for search results
 };
