@@ -112,11 +112,11 @@ const Nav = ({ openNav }: props) => {
 
                 {/* Mega Menu for Academic */}
                 {link.name === "Academic" && link.dropdown && isDropdownOpen && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[600px] bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-gray-100 dark:border-slate-700 p-8 z-50">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-150 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-gray-100 dark:border-slate-700 p-8 z-50">
                     <div className="grid grid-cols-2 gap-8">
                       {/* Column 1: Programs */}
                       <div>
-                        <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">
+                        <h4 className="pb-6 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between text-sm font-bold text-gray-900 dark:text-primary mb-4 uppercase tracking-wider brightness-130">
                           Programs
                         </h4>
                         <div className="space-y-3">
@@ -143,7 +143,7 @@ const Nav = ({ openNav }: props) => {
 
                       {/* Column 2: Training & Faculty */}
                       <div>
-                        <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">
+                        <h4 className="pb-6 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between text-sm font-bold text-gray-900 dark:text-primary mb-4 uppercase tracking-wider brightness-130">
                           Training & Faculty
                         </h4>
                         <div className="space-y-3">
@@ -193,10 +193,18 @@ const Nav = ({ openNav }: props) => {
                       <Link
                         key={subIndex}
                         href={subLink.href}
-                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-primary transition-colors"
+                        className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors group/link"
                         onClick={() => setOpenDropdown(null)}
                       >
-                        {subLink.name}
+                        <div>
+                          <div className={`text-sm font-semibold ${
+                            pathname === subLink.href
+                              ? "text-primary"
+                              : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                          }`}>
+                            {subLink.name}
+                          </div>
+                        </div>
                       </Link>
                     ))}
                   </div>
