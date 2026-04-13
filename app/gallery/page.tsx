@@ -25,7 +25,7 @@ const GalleryPage = () => {
       <PageTitle
         title="Gallery"
         subtitle="Visual Showcase"
-        description="Explore our collection of stunning visuals and creative works"
+        description="Explore our collection of campus photos, clinical training, events, and student life moments"
       />
 
       {/* Gallery Filter Section */}
@@ -102,39 +102,37 @@ const GalleryPage = () => {
                     </span>
                   )}
                 </div>
-                
-                <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white group-hover:text-primary transition-colors">
-                  {item.title}
-                </h3>
-                
-                <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
-                  {item.description}
-                </p>
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">{item.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Empty State */}
+        {/* No Items Found */}
         {filteredItems.length === 0 && (
-          <div className="text-center py-20">
+          <div className="text-center py-16">
             <Filter className="w-16 h-16 mx-auto text-gray-300 dark:text-slate-600 mb-4" />
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              No items found
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              Try selecting a different category
-            </p>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">No items found</h3>
+            <p className="text-gray-600 dark:text-gray-400">Try selecting a different category</p>
           </div>
         )}
       </div>
 
       {/* Lightbox Modal */}
       {selectedImage && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
           onClick={() => setSelectedImage(null)}
         >
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            onClick={() => setSelectedImage(null)}
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
           <div className="relative max-w-5xl max-h-[90vh]">
             <Image
               src={selectedImage}
@@ -143,14 +141,6 @@ const GalleryPage = () => {
               height={800}
               className="rounded-lg shadow-2xl"
             />
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-4 -right-4 p-2 bg-white text-gray-900 rounded-full hover:bg-red-500 hover:text-white transition-colors shadow-lg"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
           </div>
         </div>
       )}

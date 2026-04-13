@@ -25,6 +25,7 @@ import Image from "next/image"; // Next.js optimized image component
 import SectionHeading from "@/components/common/SectionHeading"; // Reusable section heading
 import React from "react";
 import { motion } from "framer-motion"; // Animation library
+import { Button } from "@/components/ui/button";
 
 const SectionAbout = () => {
   return (
@@ -77,9 +78,8 @@ const SectionAbout = () => {
             {/* I deliver responsive custom WordPress, Shopify, ECWID, and HTML5 websites with clear UX, fast performance and strong SEO foundations. */}
             Naz Nursing Institute of Health Sciences, established in 2017 by
             Waseem Welfare Trust, is a premier nursing education institution in
-            Karachi. As a project of Naz General Hospital, we are committed to
-            producing highly skilled, ethical, and compassionate nursing
-            professionals who serve the healthcare needs of Pakistan and beyond.
+            Karachi. As a project of Naz General Hospital, we are producing highly skilled, ethical, and nursing
+            professionals for Pakistan and others.
           </p>
           <p className="text-gray-700 dark:text-gray-300">
             {/* From server hosting, WHM/cPanel and deployment to AI-assisted content and paid campaign optimization, I help brands launch faster and convert better. */}
@@ -103,8 +103,13 @@ const SectionAbout = () => {
               </div>
             ))}
           </div>
+          <Button size={'lg'} variant={'link'} className="mt-10 text-lg cursor-pointer">Read more</Button>
         </div>
       </motion.article>
+
+
+
+      
 
       {/* Statistics section: Shows credibility metrics */}
       <div className="max-w-250 mt-16 mx-auto">
@@ -115,14 +120,14 @@ const SectionAbout = () => {
             return (
               <article
                 key={stat.label}
-                className="bg-white dark:bg-gray-800 shadow rounded-xl p-6 text-center"
+                className="bg-white dark:bg-gray-800 shadow rounded-full p-2 text-center"
               >
                 {/* Big number (8+, 50+, etc) */}
                 <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   {stat.value}
                 </div>
                 {/* Label (Years, Projects, Clients) */}
-                <div className="text-gray-600 dark:text-gray-400">
+                <div className="text-sm text-gray-600 dark:text-gray-400">
                   {stat.label}
                 </div>
               </article>

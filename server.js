@@ -6,7 +6,6 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-// cPanel automatically assigns a port or a socket path
 const port = 3000;
 
 app.prepare().then(() => {

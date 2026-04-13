@@ -1,28 +1,28 @@
 "use client";
 
-import { courses } from "@/data/coursesData";
+import { programs } from "@/data/programsData";
 import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
 import Link from "next/link";
-import { ArrowRight, Clock, DollarSign, GraduationCap } from "lucide-react";
+import { ArrowRight, Clock, GraduationCap } from "lucide-react";
 
-const CoursesPage = () => {
+const ProgramsPage = () => {
   return (
     <PageWrapper>
       <PageTitle
-        title="Our Courses"
+        title="Academic Programs"
         subtitle="Explore"
         description="Discover Our Comprehensive Nursing Programs"
       />
 
       <div className="max-w-7xl mx-auto mt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {courses.map((course) => {
-            const Icon = course.icon;
+          {programs.map((program) => {
+            const Icon = program.icon;
             return (
               <Link
-                key={course.id}
-                href={course.href}
+                key={program.id}
+                href={program.href}
                 className="group relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-slate-700 hover:border-primary dark:hover:border-primary"
               >
                 <div className="flex items-start justify-between mb-6">
@@ -33,38 +33,32 @@ const CoursesPage = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white group-hover:text-primary transition-colors">
-                  {course.name}
+                  {program.name}
                 </h3>
                 
                 <p className="text-gray-600 dark:text-gray-400 mb-6 line-clamp-3">
-                  {course.description}
+                  {program.description}
                 </p>
 
-                {/* Course Details */}
+                {/* Program Details */}
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center gap-3 text-sm">
                     <Clock className="w-5 h-5 text-primary" />
                     <span className="text-gray-700 dark:text-gray-300">
-                      <span className="font-semibold">Duration:</span> {course.duration}
+                      <span className="font-semibold">Duration:</span> {program.duration}
                     </span>
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <GraduationCap className="w-5 h-5 text-primary" />
                     <span className="text-gray-700 dark:text-gray-300">
-                      <span className="font-semibold">Eligibility:</span> {course.eligibility}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm">
-                    <DollarSign className="w-5 h-5 text-primary" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      <span className="font-semibold">Fees:</span> {course.fees}
+                      <span className="font-semibold">Eligibility:</span> {program.eligibility}
                     </span>
                   </div>
                 </div>
                 
                 {/* Features Tags */}
                 <div className="flex flex-wrap gap-2">
-                  {course.features.map((feature, index) => (
+                  {program.features.map((feature, index) => (
                     <span
                       key={index}
                       className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full font-medium"
@@ -90,7 +84,7 @@ const CoursesPage = () => {
       {/* CTA Section */}
       <div className="max-w-4xl mx-auto mt-16 p-8 bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl text-center">
         <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-          Need Help Choosing the Right Course?
+          Need Help Choosing the Right Program?
         </h3>
         <p className="text-gray-600 dark:text-gray-400 mb-6">
           Our admission counselors are here to help you find the perfect nursing program for your career goals.
@@ -106,4 +100,4 @@ const CoursesPage = () => {
   );
 };
 
-export default CoursesPage;
+export default ProgramsPage;

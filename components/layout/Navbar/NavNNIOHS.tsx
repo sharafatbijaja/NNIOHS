@@ -2,8 +2,8 @@
 import { NavLinks } from "@/Constant/ConstantsNNIOHS";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect } from "react";
-import { Handshake, MenuIcon } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Handshake, MenuIcon, ChevronDown } from "lucide-react";
 import ThemeToggler from "@/components/Helper/ThemeToggler";
 import Logo from "@/components/Helper/Logo";
 
@@ -14,6 +14,7 @@ type props = {
 const Nav = ({ openNav }: props) => {
   const pathname = usePathname();
   const [navBg, setNavBg] = React.useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handler = () => {
@@ -32,6 +33,17 @@ const Nav = ({ openNav }: props) => {
     };
   }, []);
 
+  const handleDropdownToggle = (name: string) => {
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
+
+  const handleDropdownMouseEnter = (name: string) => {
+    setOpenDropdown(name);
+  };
+
+  const handleDropdownMouseLeave = () => {
+    setOpenDropdown(null);
+  };
 
   return (
     <nav
@@ -40,25 +52,140 @@ const Nav = ({ openNav }: props) => {
     >
       <div className="flex justify-between ms-auto items-center h-full w-full px-4 lg:px-20">
         <Logo />
-  
 
         {/* Desktop Navigation Links - Hidden on mobile, visible on lg+ screens */}
-        <div className="hidden lg:flex items-center space-x-10">
+        <div className="hidden lg:flex items-center space-x-8">
           {NavLinks.map((link, index) => {
             const isActive = pathname === link.href;
+            const isDropdownOpen = openDropdown === link.name;
+            const hasDropdown = link.dropdown && link.dropdown.length > 0;
 
             return (
-              <Link
+              <div
                 key={index}
-                href={link.href}
-                className={`font-semibold transition-all ${
-                  isActive
-                    ? "text-primary"
-                    : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                }`}
+                className="relative"
               >
-                {link.name}
-              </Link>
+                {hasDropdown ? (
+                  <button
+                    onClick={() => handleDropdownToggle(link.name)}
+                    className={`font-semibold transition-all flex items-center gap-1 ${
+                      isActive
+                        ? "text-primary"
+                        : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+                    }`}
+                  >
+                    {link.name}
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform ${
+                        isDropdownOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className={`font-semibold transition-all flex items-center gap-1 ${
+                      isActive
+                        ? "text-primary"
+                        : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                )}
+
+                {/* Mega Menu for Academic */}
+                {link.name === "Academic" && link.dropdown && isDropdownOpen && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[600px] bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-gray-100 dark:border-slate-700 p-8 z-50">
+                    <div className="grid grid-cols-2 gap-8">
+                      {/* Column 1: Programs */}
+                      <div>
+                        <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">
+                          Programs
+                        </h4>
+                        <div className="space-y-3">
+                          {link.dropdown.slice(0, 3).map((subLink, subIndex) => (
+                            <Link
+                              key={subIndex}
+                              href={subLink.href}
+                              className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors group/link"
+                              onClick={() => setOpenDropdown(null)}
+                            >
+                              <div>
+                                <div className={`text-sm font-semibold ${
+                                  pathname === subLink.href
+                                    ? "text-primary"
+                                    : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                                }`}>
+                                  {subLink.name}
+                                </div>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Column 2: Training & Faculty */}
+                      <div>
+                        <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">
+                          Training & Faculty
+                        </h4>
+                        <div className="space-y-3">
+                          {link.dropdown.slice(3).map((subLink, subIndex) => (
+                            <Link
+                              key={subIndex + 3}
+                              href={subLink.href}
+                              className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors group/link"
+                              onClick={() => setOpenDropdown(null)}
+                            >
+                              <div>
+                                <div className={`text-sm font-semibold ${
+                                  pathname === subLink.href
+                                    ? "text-primary"
+                                    : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                                }`}>
+                                  {subLink.name}
+                                </div>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Bottom CTA */}
+                    <div className="mt-6 pt-6 border-t border-gray-100 dark:border-slate-700 flex items-center justify-between">
+                      <div className="text-sm text-gray-600 dark:text-gray-400">
+                        Explore all academic programs
+                      </div>
+                      <Link
+                        href="/programs"
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all"
+                        onClick={() => setOpenDropdown(null)}
+                      >
+                        View All Programs
+                        <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
+                      </Link>
+                    </div>
+                  </div>
+                )}
+
+                {/* Simple Dropdown for other items */}
+                {link.name !== "Academic" && link.dropdown && isDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-5 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-slate-700 py-2 z-50">
+                    {link.dropdown.map((subLink, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        href={subLink.href}
+                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-primary transition-colors"
+                        onClick={() => setOpenDropdown(null)}
+                      >
+                        {subLink.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             );
           })}
         </div>
