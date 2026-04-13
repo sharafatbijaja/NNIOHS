@@ -26,6 +26,7 @@ import SectionHeading from "@/components/common/SectionHeading"; // Reusable sec
 import React from "react";
 import { motion } from "framer-motion"; // Animation library
 import { Button } from "@/components/ui/button";
+import { ChevronRight, ChevronRightCircleIcon } from "lucide-react"; // Icon for "Read more" button
 
 const SectionAbout = () => {
   return (
@@ -103,7 +104,11 @@ const SectionAbout = () => {
               </div>
             ))}
           </div>
-          <Button size={'lg'} variant={'link'} className="mt-10 text-lg cursor-pointer">Read more</Button>
+          <Button size={'lg'} variant={'link'} className="mt-10 text-lg cursor-pointer">
+           
+            Read more
+            <ChevronRight className="ml-2 w-5 h-5 -mb-05" />
+            </Button>
         </div>
       </motion.article>
 
@@ -120,7 +125,7 @@ const SectionAbout = () => {
             return (
               <article
                 key={stat.label}
-                className="bg-white dark:bg-gray-800 shadow rounded-full p-2 text-center"
+                className="text-center"
               >
                 {/* Big number (8+, 50+, etc) */}
                 <div className="text-3xl md:text-4xl font-bold text-primary mb-2">

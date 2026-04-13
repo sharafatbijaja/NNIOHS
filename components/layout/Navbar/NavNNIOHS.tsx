@@ -116,7 +116,7 @@ const Nav = ({ openNav }: props) => {
                     <div className="grid grid-cols-2 gap-8">
                       {/* Column 1: Programs */}
                       <div>
-                        <h4 className="pb-6 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between text-sm font-bold text-gray-900 dark:text-primary mb-4 uppercase tracking-wider brightness-130">
+                        <h4 className="pb-6 border-b border-gray-400 dark:border-slate-700 flex items-center justify-between text-sm font-bold text-gray-900 dark:text-primary mb-4 uppercase tracking-wider brightness-130">
                           Programs
                         </h4>
                         <div className="space-y-3">
@@ -143,7 +143,7 @@ const Nav = ({ openNav }: props) => {
 
                       {/* Column 2: Training & Faculty */}
                       <div>
-                        <h4 className="pb-6 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between text-sm font-bold text-gray-900 dark:text-primary mb-4 uppercase tracking-wider brightness-130">
+                        <h4 className="pb-6 border-b border-gray-400 dark:border-slate-700 flex items-center justify-between text-sm font-bold text-gray-900 dark:text-primary mb-4 uppercase tracking-wider brightness-130">
                           Training & Faculty
                         </h4>
                         <div className="space-y-3">
