@@ -36,9 +36,9 @@ export const NavLinks = [
     href: "#",
     dropdown: [
       { name: "Admissions", href: "/admissions" },
-      { name: "Apply Now", href: "/admissions" },
-      { name: "Eligibility Criteria", href: "/admissions" },
-      { name: "Required Documents", href: "/admissions" },
+      { name: "Apply Now", href: "/apply-now" },
+      { name: "Eligibility Criteria", href: "/eligibility-criteria" },
+      { name: "Required Documents", href: "/required-documents" },
     ],
   },
 ];

@@ -19,7 +19,6 @@ const AboutPage = () => {
         // description="Learn more about my background, skills, and professional journey"
         description="Shaping Compassionate & Competent Nurses Since 2017"
       />
-      <SectionTeam />
       <SectionImpact />
       <SectionWorkHistory />
       <SectionCertifications />
