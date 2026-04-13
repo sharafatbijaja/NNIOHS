@@ -15,6 +15,7 @@ const Nav = ({ openNav }: props) => {
   const pathname = usePathname();
   const [navBg, setNavBg] = React.useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const navRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handler = () => {
@@ -33,6 +34,20 @@ const Nav = ({ openNav }: props) => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setOpenDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   const handleDropdownToggle = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
@@ -47,6 +62,7 @@ const Nav = ({ openNav }: props) => {
 
   return (
     <nav
+      ref={navRef}
       className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 py-2 bg-transparent dark:bg-transparent backdrop-blur-xl border-b border-white/50 dark:border-slate-900/50 ${navBg ? "shadow-sm " : "shadow-none"}`}
       aria-label="Main navigation"
     >
@@ -68,7 +84,7 @@ const Nav = ({ openNav }: props) => {
                 {hasDropdown ? (
                   <button
                     onClick={() => handleDropdownToggle(link.name)}
-                    className={`font-semibold transition-all flex items-center gap-1 ${
+                    className={`font-semibold transition-all flex items-center gap-1 cursor-pointer ${
                       isActive
                         ? "text-primary"
                         : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
