@@ -37,7 +37,8 @@ const AdmissionsPage = () => {
 
       <div className="max-w-6xl mx-auto mt-12 space-y-12">
         {/* Admissions Open - Session 2026 */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
+       <section>
+         <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white">
               <GraduationCap className="w-8 h-8" />
@@ -53,9 +54,11 @@ const AdmissionsPage = () => {
             Applications are now open for 2026 academic session. Secure your place in Pakistan's leading nursing institute and start your journey towards a rewarding healthcare career.
           </p>
         </div>
+       </section>
 
         {/* Important Dates & Deadlines */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+       <section>
+         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Calendar className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Important Dates & Deadlines</h2>
@@ -78,9 +81,11 @@ const AdmissionsPage = () => {
             </div>
           </div>
         </div>
+       </section>
 
         {/* Eligibility Criteria (Both Programs) */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Users className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Eligibility Criteria</h2>
@@ -131,9 +136,11 @@ const AdmissionsPage = () => {
             </div>
           </div>
         </div>
+        </section>
 
         {/* Required Documents */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <FileText className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Required Documents</h2>
@@ -160,9 +167,11 @@ const AdmissionsPage = () => {
             * All documents must be attested. Bring original documents for verification at time of admission.
           </p>
         </div>
+        </section>
 
         {/* Selection Process */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+       <section>
+         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <ClipboardCheck className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Selection Process</h2>
@@ -209,9 +218,11 @@ const AdmissionsPage = () => {
             </div>
           </div>
         </div>
+       </section>
 
         {/* Merit List Information */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
+       <section>
+         <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
           <div className="flex items-center gap-3 mb-6">
             <Award className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Merit List Information</h2>
@@ -251,6 +262,7 @@ const AdmissionsPage = () => {
             </div>
           </div>
         </div>
+       </section>
 
       </div>
     </PageWrapper>

@@ -34,7 +34,7 @@ const PageTitle = ({ title, subtitle, description }: PageTitleProps) => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="container max-w-7xl mx-auto pt-40 px-5"
+      className="container mx-auto pt-40 px-5"
     >
       {/* Subtitle (optional) */}
       {subtitle && (

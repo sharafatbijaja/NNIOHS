@@ -15,7 +15,8 @@ const BSNPage = () => {
         description="Comprehensive 4-year nursing degree program for aspiring registered nurses"
       />
 
-      <div className="max-w-6xl mx-auto mt-12 space-y-12">
+      <section>
+        <div className="max-w-6xl mx-auto mt-12 space-y-12">
         {/* Program Introduction */}
         <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
           <div className="flex items-start gap-4 mb-4">
@@ -211,6 +212,7 @@ const BSNPage = () => {
           </Button>
         </div>
       </div>
+      </section>
     </PageWrapper>
   );
 };

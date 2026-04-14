@@ -52,9 +52,10 @@ const ApplyNowPage = () => {
         description="Take the First Step Towards Your Nursing Career - Session 2026"
       />
 
-      <div className="max-w-6xl mx-auto mt-12 space-y-12">
+      <div className="mt-12 space-y-12">
         {/* Admissions Open Banner */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
+        <section className="container mx-auto">
+          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white animate-pulse">
               <GraduationCap className="w-8 h-8" />
@@ -69,10 +70,12 @@ const ApplyNowPage = () => {
           <p className="text-center text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto">
             Applications are now open for the 2026 academic session. Secure your place in Pakistan's leading nursing institute and start your journey towards a rewarding healthcare career.
           </p>
-        </div>
+          </div>
+        </section>
 
         {/* Application Process Steps */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section className="container mx-auto">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <ClipboardCheck className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Application Process</h2>
@@ -100,10 +103,12 @@ const ApplyNowPage = () => {
               </div>
             ))}
           </div>
-        </div>
+          </div>
+        </section>
 
         {/* Application Form */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section className="container mx-auto">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <FileText className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Application Form</h2>
@@ -210,10 +215,12 @@ const ApplyNowPage = () => {
               </div>
             </form>
           )}
-        </div>
+          </div>
+        </section>
 
         {/* Important Dates */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section className="container mx-auto">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Calendar className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Important Dates</h2>
@@ -235,10 +242,12 @@ const ApplyNowPage = () => {
               <p className="text-2xl font-bold text-primary">April 2026</p>
             </div>
           </div>
-        </div>
+          </div>
+        </section>
 
         {/* Contact Information */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
+        <section className="container mx-auto">
+          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Need Help?</h2>
             <p className="text-gray-600 dark:text-gray-400">Our admission counselors are here to assist you</p>
@@ -272,7 +281,8 @@ const ApplyNowPage = () => {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </section>
       </div>
     </PageWrapper>
   );

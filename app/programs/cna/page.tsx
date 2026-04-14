@@ -17,9 +17,10 @@ const CNAPage = () => {
 
       <div className="max-w-6xl mx-auto mt-12 space-y-12">
         {/* Program Introduction */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
+        <section>
+          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
           <div className="flex items-start gap-4 mb-4">
-            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/20 text-primary">
+            <div className="inline-flex h-16 items-center justify-center text-primary/50">
               <Stethoscope className="w-8 h-8" />
             </div>
             <div>
@@ -32,9 +33,11 @@ const CNAPage = () => {
             </div>
           </div>
         </div>
+        </section>
 
         {/* Duration & Diploma */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Clock className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Duration & Diploma</h2>
@@ -52,9 +55,11 @@ const CNAPage = () => {
             </div>
           </div>
         </div>
+        </section>
 
         {/* Eligibility Criteria */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <BookOpen className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Eligibility Criteria</h2>
@@ -94,9 +99,11 @@ const CNAPage = () => {
             </div>
           </div>
         </div>
+        </section>
 
         {/* Curriculum Outline */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Users className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Curriculum Outline</h2>
@@ -105,7 +112,7 @@ const CNAPage = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="bg-primary text-white text-sm px-3 py-1 rounded-full">Year 1</span>
+                <span className="bg-primary text-white text-sm px-3 py-1 rounded-full text-nowrap">Year 1</span>
                 Foundation & Basic Skills
               </h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -120,7 +127,7 @@ const CNAPage = () => {
             
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="bg-primary text-white text-sm px-3 py-1 rounded-full">Year 2</span>
+                <span className="bg-primary text-white text-sm px-3 py-1 rounded-full  text-nowrap">Year 2</span>
                 Advanced Training & Practice
               </h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -134,9 +141,11 @@ const CNAPage = () => {
             </div>
           </div>
         </div>
+        </section>
 
         {/* Career Opportunities */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Briefcase className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Career Opportunities</h2>
@@ -164,9 +173,11 @@ const CNAPage = () => {
             ))}
           </div>
         </div>
+        </section>
 
         {/* Apply Now Button */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <section>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild className="px-8">
             <Link href="/admissions">
               <Send className="w-5 h-5 mr-2" />
@@ -180,6 +191,7 @@ const CNAPage = () => {
             </Link>
           </Button>
         </div>
+        </section>
       </div>
     </PageWrapper>
   );

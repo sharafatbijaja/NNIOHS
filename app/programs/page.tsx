@@ -15,7 +15,7 @@ const ProgramsPage = () => {
         description="Discover Our Comprehensive Nursing Programs"
       />
 
-      <div className="max-w-7xl mx-auto mt-12">
+      <section className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {programs.map((program) => {
             const Icon = program.icon;
@@ -79,10 +79,11 @@ const ProgramsPage = () => {
             );
           })}
         </div>
-      </div>
+      </section>
 
       {/* CTA Section */}
-      <div className="max-w-4xl mx-auto mt-16 p-8 bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl text-center">
+      <section>
+        <div className="flex flex-col items-center max-w-4xl mx-auto mt-16 p-8 bg-linear-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl">
         <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
           Need Help Choosing the Right Program?
         </h3>
@@ -96,6 +97,7 @@ const ProgramsPage = () => {
           Apply Now
         </Link>
       </div>
+      </section>
     </PageWrapper>
   );
 };

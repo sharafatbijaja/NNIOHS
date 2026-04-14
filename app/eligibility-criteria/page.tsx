@@ -24,9 +24,10 @@ const EligibilityCriteriaPage = () => {
         description="Check Your Eligibility for Our Nursing Programs - Session 2026"
       />
 
-      <div className="max-w-6xl mx-auto mt-12 space-y-12">
+      <div className="mt-12 space-y-12">
         {/* Important Notice */}
-        <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-800">
+        <section className="container mx-auto">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-800">
           <div className="flex items-start gap-4">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
               <Info className="w-6 h-6" />
@@ -41,10 +42,12 @@ const EligibilityCriteriaPage = () => {
               </p>
             </div>
           </div>
-        </div>
+          </div>
+        </section>
 
         {/* BSN Program Eligibility */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section className="container mx-auto">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
               <GraduationCap className="w-6 h-6" />
@@ -126,10 +129,12 @@ const EligibilityCriteriaPage = () => {
               </li>
             </ul>
           </div>
-        </div>
+          </div>
+        </section>
 
         {/* CNA Program Eligibility */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section className="container mx-auto">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-green-500 text-white">
               <Award className="w-6 h-6" />
@@ -211,10 +216,12 @@ const EligibilityCriteriaPage = () => {
               </li>
             </ul>
           </div>
-        </div>
+          </div>
+        </section>
 
         {/* General Requirements (Both Programs) */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
+        <section className="container mx-auto">
+          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
           <div className="flex items-center gap-3 mb-6">
             <Clock className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">General Requirements</h2>
@@ -234,10 +241,12 @@ const EligibilityCriteriaPage = () => {
               </div>
             ))}
           </div>
-        </div>
+          </div>
+        </section>
 
         {/* Important Notes */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section className="container mx-auto">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <AlertCircle className="w-8 h-8 text-amber-500" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Important Notes</h2>
@@ -256,10 +265,12 @@ const EligibilityCriteriaPage = () => {
               </div>
             ))}
           </div>
-        </div>
+          </div>
+        </section>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-8 text-center">
+        <section className="container mx-auto">
+          <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Ready to Apply?</h2>
           <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
             If you meet the eligibility criteria, don't wait! Apply now and secure your place in our nursing programs for Session 2026.
@@ -280,7 +291,8 @@ const EligibilityCriteriaPage = () => {
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>
-        </div>
+          </div>
+        </section>
       </div>
     </PageWrapper>
   );

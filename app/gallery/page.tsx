@@ -29,7 +29,7 @@ const GalleryPage = () => {
       />
 
       {/* Gallery Filter Section */}
-      <div className="max-w-7xl mx-auto mt-12">
+      <section className="container mx-auto">
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <button
             onClick={() => setActiveCategory("all")}
@@ -117,7 +117,7 @@ const GalleryPage = () => {
             <p className="text-gray-600 dark:text-gray-400">Try selecting a different category</p>
           </div>
         )}
-      </div>
+      </section>
 
       {/* Lightbox Modal */}
       {selectedImage && (
