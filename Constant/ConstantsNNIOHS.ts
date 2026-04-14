@@ -20,7 +20,6 @@ export const NavLinks = [
     dropdown: [
       { name: "About Us", href: "/about" },
       { name: "Facilities", href: "/facilities" },
-      { name: "Faculty", href: "/faculty" },
     ],
   },
   {

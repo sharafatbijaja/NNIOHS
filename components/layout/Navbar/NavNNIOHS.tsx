@@ -188,7 +188,7 @@ const Nav = ({ openNav }: props) => {
 
                 {/* Simple Dropdown for other items */}
                 {link.name !== "Academic" && link.dropdown && isDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-5 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-slate-700 py-2 z-50">
+                  <div className="absolute top-full left-0 mt-5 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-slate-700 p-2 z-50">
                     {link.dropdown.map((subLink, subIndex) => (
                       <Link
                         key={subIndex}

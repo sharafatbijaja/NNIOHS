@@ -15,7 +15,7 @@ const SectionContact = () => {
       <div className="pointer-events-none absolute left-0 top-20 h-96 w-96 rounded-full bg-gradient-to-br from-primary/10 to-blue-500/10 blur-3xl" />
       <div className="pointer-events-none absolute right-0 bottom-20 h-80 w-80 rounded-full bg-gradient-to-br from-purple-500/10 to-pink-500/10 blur-3xl" />
       
-      <div className="relative z-10 w-[80%] mx-auto">
+      <div className="relative z-10 mx-auto">
         <SectionHeading
           title1="Get In"
           title2="Touch"
@@ -97,6 +97,26 @@ const SectionContact = () => {
                 })}
               </div>
             </div>
+
+            {/* Google Map */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="rounded-2xl overflow-hidden shadow-xl border border-slate-200/80 dark:border-gray-700"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4631.021879259885!2d66.99587017617706!3d24.927532842568937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315676cdb92e5%3A0x451c1fd4badadba4!2sNaz%20Nursing%20Institute%20of%20Health%20Science!5e1!3m2!1sen!2s!4v1776172642373!5m2!1sen!2s"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+              />
+            </motion.div>
 
             {/* Location Badge */}
             <div className="rounded-2xl bg-gradient-to-r from-primary/10 to-primary/5 p-6 border border-primary/20">
