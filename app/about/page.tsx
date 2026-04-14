@@ -21,8 +21,9 @@ const AboutPage = () => {
       />
       <SectionImpact />
       <SectionWorkHistory />
+        <SectionStatsBanner />
       <SectionCertifications />
-      <SectionStatsBanner />
+    
     </PageWrapper>
   );
 };

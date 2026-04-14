@@ -15,12 +15,12 @@ const BSNPage = () => {
         description="Comprehensive 4-year nursing degree program for aspiring registered nurses"
       />
 
-      <section>
-        <div className="max-w-6xl mx-auto mt-12 space-y-12">
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto space-y-12">
         {/* Program Introduction */}
         <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
           <div className="flex items-start gap-4 mb-4">
-            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/20 text-primary">
+            <div className="inline-flex h-16 w-16 items-center justify-center text-primary">
               <GraduationCap className="w-8 h-8" />
             </div>
             <div>

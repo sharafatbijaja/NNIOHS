@@ -15,12 +15,12 @@ const CNAPage = () => {
         description="Intensive 2-year certification program for entry-level nursing positions"
       />
 
-      <div className="max-w-6xl mx-auto mt-12 space-y-12">
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto space-y-12">
         {/* Program Introduction */}
-        <section>
-          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
+        <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
           <div className="flex items-start gap-4 mb-4">
-            <div className="inline-flex h-16 items-center justify-center text-primary/50">
+            <div className="inline-flex h-16 w-16 items-center justify-center text-primary">
               <Stethoscope className="w-8 h-8" />
             </div>
             <div>
@@ -33,11 +33,9 @@ const CNAPage = () => {
             </div>
           </div>
         </div>
-        </section>
 
         {/* Duration & Diploma */}
-        <section>
-          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Clock className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Duration & Diploma</h2>
@@ -55,11 +53,9 @@ const CNAPage = () => {
             </div>
           </div>
         </div>
-        </section>
 
         {/* Eligibility Criteria */}
-        <section>
-          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <BookOpen className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Eligibility Criteria</h2>
@@ -99,11 +95,9 @@ const CNAPage = () => {
             </div>
           </div>
         </div>
-        </section>
 
         {/* Curriculum Outline */}
-        <section>
-          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Users className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Curriculum Outline</h2>
@@ -141,11 +135,9 @@ const CNAPage = () => {
             </div>
           </div>
         </div>
-        </section>
 
         {/* Career Opportunities */}
-        <section>
-          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Briefcase className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Career Opportunities</h2>
@@ -173,11 +165,9 @@ const CNAPage = () => {
             ))}
           </div>
         </div>
-        </section>
 
         {/* Apply Now Button */}
-        <section>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild className="px-8">
             <Link href="/admissions">
               <Send className="w-5 h-5 mr-2" />
@@ -191,8 +181,8 @@ const CNAPage = () => {
             </Link>
           </Button>
         </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </PageWrapper>
   );
 };

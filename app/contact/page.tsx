@@ -3,7 +3,6 @@
 import ContactSection from '@/components/sections/Contact/SectionContact'
 import PageWrapper from '@/components/common/PageWrapper'
 import PageTitle from '@/components/common/PageTitle'
-import { ContactInfo } from '@/components/sections';
 
 const ContactPage = () => {
   return (

@@ -5,6 +5,7 @@ import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
 import Link from "next/link";
 import { ArrowRight, Clock, GraduationCap } from "lucide-react";
+import SectionHeading from "@/components/common/SectionHeading";
 
 const ProgramsPage = () => {
   return (
@@ -31,10 +32,9 @@ const ProgramsPage = () => {
                   </div>
                   <ArrowRight className="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" />
                 </div>
-                
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white group-hover:text-primary transition-colors">
                   {program.name}
-                </h3>
+                </h2>
                 
                 <p className="text-gray-600 dark:text-gray-400 mb-6 line-clamp-3">
                   {program.description}
@@ -82,12 +82,16 @@ const ProgramsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section>
-        <div className="flex flex-col items-center max-w-4xl mx-auto mt-16 p-8 bg-linear-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl">
-        <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+      <section className="pt-0">
+        <div className="flex flex-col items-center max-w-4xl mx-auto p-10 text-center bg-linear-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl">
+        <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
           Need Help Choosing the Right Program?
-        </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-6">
+        </h2>
+
+
+        
+
+        <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-150 py-5">
           Our admission counselors are here to help you find the perfect nursing program for your career goals.
         </p>
         <Link
