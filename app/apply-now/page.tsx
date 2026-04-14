@@ -3,19 +3,20 @@
 import { useState } from "react";
 import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
+import SectionHeading from "@/components/common/SectionHeading";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { 
-  MessageCircle, 
-  CheckCircle, 
-  Clock, 
-  GraduationCap, 
-  Phone, 
-  Send, 
-  FileText, 
-  Users, 
-  Award, 
-  Calendar, 
+import {
+  MessageCircle,
+  CheckCircle,
+  Clock,
+  GraduationCap,
+  Phone,
+  Send,
+  FileText,
+  Users,
+  Award,
+  Calendar,
   ClipboardCheck,
   ArrowRight,
   MapPin,
@@ -52,10 +53,17 @@ const ApplyNowPage = () => {
         description="Take the First Step Towards Your Nursing Career - Session 2026"
       />
 
+
+
       <div className="mt-12 space-y-12">
         {/* Admissions Open Banner */}
-        <section className="container mx-auto">
-          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
+        <section className="container mx-auto py-0">
+                <SectionHeading
+        title1="Take the First"
+        title2="Step"
+        description="Apply now and begin your journey towards a rewarding nursing career"
+      />
+          <div className="max-w-250 mx-auto bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/10 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white animate-pulse">
               <GraduationCap className="w-8 h-8" />
@@ -74,7 +82,7 @@ const ApplyNowPage = () => {
         </section>
 
         {/* Application Process Steps */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <ClipboardCheck className="w-8 h-8 text-primary" />
@@ -107,8 +115,8 @@ const ApplyNowPage = () => {
         </section>
 
         {/* Application Form */}
-        <section className="container mx-auto">
-          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
+        <section className="max-w-200 mx-auto py-0">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <FileText className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Application Form</h2>
@@ -219,7 +227,7 @@ const ApplyNowPage = () => {
         </section>
 
         {/* Important Dates */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Calendar className="w-8 h-8 text-primary" />
@@ -229,60 +237,23 @@ const ApplyNowPage = () => {
             <div className="bg-primary/5 rounded-xl p-6 text-center">
               <Calendar className="w-10 h-10 text-primary mx-auto mb-3" />
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Admission Start</h3>
-              <p className="text-2xl font-bold text-primary">January 2026</p>
+              <p className="text-xl font-bold text-primary">January 2026</p>
             </div>
             <div className="bg-red-50 dark:bg-red-900/20 rounded-xl p-6 text-center border-2 border-red-200 dark:border-red-800">
               <Clock className="w-10 h-10 text-red-500 mx-auto mb-3" />
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Last Date to Apply</h3>
-              <p className="text-2xl font-bold text-red-500">March 31, 2026</p>
+              <p className="text-xl font-bold text-red-500">March 31, 2026</p>
             </div>
             <div className="bg-primary/5 rounded-xl p-6 text-center">
               <GraduationCap className="w-10 h-10 text-primary mx-auto mb-3" />
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Classes Begin</h3>
-              <p className="text-2xl font-bold text-primary">April 2026</p>
+              <p className="text-xl font-bold text-primary">April 2026</p>
             </div>
           </div>
           </div>
         </section>
 
-        {/* Contact Information */}
-        <section className="container mx-auto">
-          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Need Help?</h2>
-            <p className="text-gray-600 dark:text-gray-400">Our admission counselors are here to assist you</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-6">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
-                <Phone className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white">Call Us</h3>
-                <p className="text-primary font-medium">+92 312 2815799</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-6">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-green-500/20 text-green-600">
-                <MessageCircle className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white">WhatsApp</h3>
-                <p className="text-green-600 font-medium">+92 312 2815799</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-6">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
-                <MapPin className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white">Visit Us</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">Karachi, Pakistan</p>
-              </div>
-            </div>
-          </div>
-          </div>
-        </section>
+   
       </div>
     </PageWrapper>
   );

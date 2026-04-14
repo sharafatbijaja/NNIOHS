@@ -2,13 +2,14 @@
 
 import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
+import SectionHeading from "@/components/common/SectionHeading";
 import Link from "next/link";
-import { 
-  FileText, 
-  Download, 
-  CheckCircle, 
-  AlertCircle, 
-  Upload, 
+import {
+  FileText,
+  Download,
+  CheckCircle,
+  AlertCircle,
+  Upload,
   ArrowRight,
   Info,
   User,
@@ -26,9 +27,19 @@ const RequiredDocumentsPage = () => {
         description="Complete List of Documents Required for Admission - Session 2026"
       />
 
+   
+
       <div className="mt-12 space-y-12">
         {/* Important Notice */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
+
+   <SectionHeading
+        title1="Required"
+        title2="Documents"
+        description="Complete list of documents needed for admission - ensure you have everything ready"
+      />
+
+
           <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-800">
           <div className="flex items-start gap-4">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
@@ -48,7 +59,7 @@ const RequiredDocumentsPage = () => {
         </section>
 
         {/* Personal Documents */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
@@ -89,7 +100,7 @@ const RequiredDocumentsPage = () => {
         </section>
 
         {/* Academic Documents */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-green-500 text-white">
@@ -132,7 +143,7 @@ const RequiredDocumentsPage = () => {
         </section>
 
         {/* Medical & Other Documents */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-purple-500 text-white">
@@ -175,7 +186,7 @@ const RequiredDocumentsPage = () => {
         </section>
 
         {/* Document Checklist Summary */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
           <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
           <div className="flex items-center gap-3 mb-6">
             <CheckCircle className="w-8 h-8 text-primary" />
@@ -208,7 +219,7 @@ const RequiredDocumentsPage = () => {
         </section>
 
         {/* Important Notes */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <AlertCircle className="w-8 h-8 text-amber-500" />
@@ -234,7 +245,7 @@ const RequiredDocumentsPage = () => {
         </section>
 
         {/* Document Submission Process */}
-        <section className="container mx-auto">
+        <section className="container mx-auto py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Upload className="w-8 h-8 text-primary" />

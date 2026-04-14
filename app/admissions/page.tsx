@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
+import SectionHeading from "@/components/common/SectionHeading";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, CheckCircle, Clock, GraduationCap, Phone, Send, FileText, Users, Award, Calendar, ClipboardCheck } from "lucide-react";
@@ -35,9 +36,16 @@ const AdmissionsPage = () => {
         description="Start Your Nursing Career Today - Session 2026"
       />
 
+      
+
       <div className="max-w-6xl mx-auto mt-12 space-y-12">
         {/* Admissions Open - Session 2026 */}
-       <section>
+       <section className="py-0">
+        <SectionHeading
+        title1="Start Your"
+        title2="Nursing Career"
+        description="Join Pakistan's leading nursing institute and build a rewarding healthcare profession"
+      />
          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white">
@@ -57,7 +65,7 @@ const AdmissionsPage = () => {
        </section>
 
         {/* Important Dates & Deadlines */}
-       <section>
+       <section className="py-0">
          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Calendar className="w-8 h-8 text-primary" />
@@ -84,7 +92,7 @@ const AdmissionsPage = () => {
        </section>
 
         {/* Eligibility Criteria (Both Programs) */}
-        <section>
+        <section className="py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <Users className="w-8 h-8 text-primary" />
@@ -139,7 +147,7 @@ const AdmissionsPage = () => {
         </section>
 
         {/* Required Documents */}
-        <section>
+        <section className="py-0">
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <FileText className="w-8 h-8 text-primary" />
@@ -170,7 +178,7 @@ const AdmissionsPage = () => {
         </section>
 
         {/* Selection Process */}
-       <section>
+       <section className="py-0">
          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <ClipboardCheck className="w-8 h-8 text-primary" />
@@ -221,7 +229,7 @@ const AdmissionsPage = () => {
        </section>
 
         {/* Merit List Information */}
-       <section>
+       <section className="py-0">
          <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
           <div className="flex items-center gap-3 mb-6">
             <Award className="w-8 h-8 text-primary" />
