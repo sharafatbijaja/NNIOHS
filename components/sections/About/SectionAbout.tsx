@@ -59,11 +59,11 @@ const SectionAbout = () => {
         <div>
           {/* Next.js Image component: optimizes images automatically */}
           <Image
-            src="/images/p1.jpg" // Image path from public folder
+            src="/images/about-us2.jpg" // Image path from public folder
             alt="About Us" // Alt text for SEO and accessibility
             width={700} // Image width
             height={500} // Image height
-            className="rounded-lg shadow-lg" // Styling: rounded corners + shadow
+            className="rounded-lg shadow-lg w-full" // Styling: rounded corners + shadow
           />
         </div>
 

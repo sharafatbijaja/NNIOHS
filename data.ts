@@ -103,35 +103,83 @@ export const highlights = [
 export const userReviewData = [
   {
     id: 1,
-    name: "Ayesha Khan",
+    name: "Aqib Khan",
     profession: "BS Nursing Graduate",
-    userImage: "/images/u1.jpg",
+    userImage: "/images/student-images-for-reviews/Aqib Khan.jpeg",
     review:
       "Excellent education and practical training at NNIOHS prepared me for a successful nursing career.",
   },
   {
     id: 2,
-    name: "Fatima Ali",
+    name: "Iqra",
     profession: "CNA Program Graduate",
-    userImage: "/images/u2.jpg",
+    userImage: "/images/student-images-for-reviews/Iqra.jpeg",
     review:
       "The faculty is highly qualified and supportive. Best decision to join NNIOHS for my nursing education.",
   },
   {
     id: 3,
-    name: "Ahmed Hassan",
+    name: "Michelle Jawaid",
     profession: "Healthcare Professional",
-    userImage: "/images/u3.jpg",
+    userImage: "/images/student-images-for-reviews/Michelle Jawaid.jpeg",
     review:
       "NNIOHS graduates are well-prepared and skilled. We hire many of their students at our hospital.",
   },
   {
     id: 4,
-    name: "Sara Ahmed",
+    name: "Muhammad Faizyab",
     profession: "Nursing Student",
-    userImage: "/images/u4.jpg",
+    userImage: "/images/student-images-for-reviews/Muhammad Faizyab.jpeg",
     review:
       "Amazing clinical training opportunities and modern facilities make NNIOHS the best choice.",
+  },
+  {
+    id: 5,
+    name: "Muhammad Umer",
+    profession: "BS Nursing Graduate",
+    userImage: "/images/student-images-for-reviews/Muhammad Umer.jpeg",
+    review:
+      "The hands-on clinical experience I gained at NNIOHS was invaluable for my career in healthcare.",
+  },
+  {
+    id: 6,
+    name: "Muhammad Waseem",
+    profession: "CNA Program Graduate",
+    userImage: "/images/student-images-for-reviews/Muhammad Waseem.jpeg",
+    review:
+      "NNIOHS provided me with the skills and confidence needed to excel in the nursing profession.",
+  },
+  {
+    id: 7,
+    name: "Mumtaz Ali",
+    profession: "Healthcare Professional",
+    userImage: "/images/student-images-for-reviews/Mumtaz Ali.jpeg",
+    review:
+      "The comprehensive curriculum and experienced faculty at NNIOHS truly set it apart from other institutions.",
+  },
+  {
+    id: 8,
+    name: "Shafquat Hussain",
+    profession: "Nursing Student",
+    userImage: "/images/student-images-for-reviews/Shafquat Hussain.jpeg",
+    review:
+      "I'm grateful for the excellent education and support I received at NNIOHS. It transformed my career.",
+  },
+  {
+    id: 9,
+    name: "Syed Ibrar Hussain Shah",
+    profession: "BS Nursing Graduate",
+    userImage: "/images/student-images-for-reviews/Syed Ibrar Hussain Shah.jpeg",
+    review:
+      "NNIOHS's commitment to excellence in nursing education is unmatched. Highly recommended!",
+  },
+  {
+    id: 10,
+    name: "Waneeza",
+    profession: "CNA Program Graduate",
+    userImage: "/images/student-images-for-reviews/Waneeza.jpeg",
+    review:
+      "The practical training and clinical rotations at NNIOHS gave me real-world experience in healthcare.",
   },
 ];
 

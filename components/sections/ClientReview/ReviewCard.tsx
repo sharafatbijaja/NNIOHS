@@ -61,9 +61,9 @@ const ReviewCard = ({ user }: props) => {
         <Image
           src={user.userImage}
           alt={user.name} // Important for accessibility
-          width={50}
-          height={50}
-          className="w-12 h-12 rounded-full" // Circle shape
+          width={80}
+          height={80}
+          className="w-20 h-20 rounded-full object-cover" // Circle shape with 1:1 ratio
         />
 
         {/* User details */}
