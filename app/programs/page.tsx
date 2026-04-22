@@ -1,6 +1,6 @@
 "use client";
 
-import { programs } from "@/data";
+import { programs, paramedicalCourses } from "@/data";
 import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
 import Link from "next/link";
@@ -99,7 +99,7 @@ const ProgramsPage = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {programs.map((program) => {
+          {paramedicalCourses.map((program) => {
             const Icon = program.icon;
             return (
               <Link
