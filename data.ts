@@ -419,7 +419,7 @@ export const skillCategories = [
       { name: "CNA Diploma", icon: BookOpen },
       
       { name: "Paramedical Courses", icon: Layers },
-      { name: "AID Nurse Certificate One Year", icon: Layout },
+      { name: "Aid Nurse Certificate One Year", icon: Layout },
       { name: "Seminars", icon: Globe },
     ],
   },
