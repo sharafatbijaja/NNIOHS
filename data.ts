@@ -44,10 +44,10 @@ import {
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 
 export const stats = [
-   { label: "Years Established", value: "7+" },
-  { label: "Students Graduated", value: "500+" },
-  { label: "Faculty Members", value: "25+" },
-  { label: "Hospital Affiliates", value: "5+" },
+   { label: "Years Established", value: "8+" },
+  { label: "Students Graduated", value: "100+" },
+  { label: "Faculty Members", value: "15+" },
+  { label: "Hospital Affiliates", value: "3" },
   // { label: "Years Experience", value: "8+" },
   // { label: "Projects Completed", value: "100+" },
   // { label: "Shopify Stores", value: "25+" },
@@ -104,7 +104,7 @@ export const userReviewData = [
   {
     id: 1,
     name: "Aqib Khan",
-    profession: "BS Nursing Graduate",
+    profession: "Generic BS Nursing Graduate",
     userImage: "/images/student-images-for-reviews/Aqib Khan.jpeg",
     review:
       "Excellent education and practical training at NNIOHS prepared me for a successful nursing career.",
@@ -112,7 +112,7 @@ export const userReviewData = [
   {
     id: 2,
     name: "Iqra",
-    profession: "CNA Program Graduate",
+    profession: "CNA Diploma Graduate",
     userImage: "/images/student-images-for-reviews/Iqra.jpeg",
     review:
       "The faculty is highly qualified and supportive. Best decision to join NNIOHS for my nursing education.",
@@ -136,7 +136,7 @@ export const userReviewData = [
   {
     id: 5,
     name: "Muhammad Umer",
-    profession: "BS Nursing Graduate",
+    profession: "Generic BS Nursing Graduate",
     userImage: "/images/student-images-for-reviews/Muhammad Umer.jpeg",
     review:
       "The hands-on clinical experience I gained at NNIOHS was invaluable for my career in healthcare.",
@@ -144,7 +144,7 @@ export const userReviewData = [
   {
     id: 6,
     name: "Muhammad Waseem",
-    profession: "CNA Program Graduate",
+    profession: "CNA Diploma Graduate",
     userImage: "/images/student-images-for-reviews/Muhammad Waseem.jpeg",
     review:
       "NNIOHS provided me with the skills and confidence needed to excel in the nursing profession.",
@@ -168,7 +168,7 @@ export const userReviewData = [
   {
     id: 9,
     name: "Syed Ibrar Hussain Shah",
-    profession: "BS Nursing Graduate",
+    profession: "Generic BS Nursing Graduate",
     userImage: "/images/student-images-for-reviews/Syed Ibrar Hussain Shah.jpeg",
     review:
       "NNIOHS's commitment to excellence in nursing education is unmatched. Highly recommended!",
@@ -176,7 +176,7 @@ export const userReviewData = [
   {
     id: 10,
     name: "Waneeza",
-    profession: "CNA Program Graduate",
+    profession: "CNA Diploma Graduate",
     userImage: "/images/student-images-for-reviews/Waneeza.jpeg",
     review:
       "The practical training and clinical rotations at NNIOHS gave me real-world experience in healthcare.",
@@ -289,7 +289,7 @@ export const experiences = [
   },
   {
     type: "education",
-    title: "BS Nursing Program Launch",
+    title: "Generic BS Nursing Program Launch",
     company: "NNIOHS Academic Department",
     period: "2018 - Present",
     description:
@@ -415,11 +415,11 @@ export const skillCategories = [
   {
     title: "Academic Programs",
     skills: [
-      { name: "BS Nursing", icon: GraduationCap },
-      { name: "CNA Program", icon: BookOpen },
+      { name: "Generic BS Nursing", icon: GraduationCap },
+      { name: "CNA Diploma", icon: BookOpen },
       { name: "Post RN BSN", icon: ClipboardCheck },
-      { name: "Diploma Courses", icon: Layers },
-      { name: "Workshops", icon: Layout },
+      { name: "Paramedical Courses", icon: Layers },
+      { name: "AID Nurse Certificate One Year", icon: Layout },
       { name: "Seminars", icon: Globe },
     ],
   },
@@ -437,12 +437,14 @@ export const skillCategories = [
   {
     title: "Facilities & Resources",
     skills: [
-      { name: "Skills Lab", icon: Cpu },
+      { name: "Skills & Anatomy Lab", icon: Cpu },
       { name: "Computer Lab", icon: Server },
+      { name: "Science Lab", icon: Truck },
       { name: "Library", icon: BookOpen },
-      { name: "Hostel", icon: BedDouble },
-      { name: "Transport", icon: Truck },
+     
+      
       { name: "Hospital Training", icon: Hospital },
+       { name: "Hostel", icon: BedDouble },
     ],
   },
 ];

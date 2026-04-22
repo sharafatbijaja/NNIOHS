@@ -6,7 +6,12 @@ import { Button } from "../ui/button";
 /**
  * CTA Component Types
  */
-export type CTAVariant = "primary" | "secondary" | "gradient" | "dark" | "minimal";
+export type CTAVariant =
+  | "primary"
+  | "secondary"
+  | "gradient"
+  | "dark"
+  | "minimal";
 export type CTASize = "small" | "medium" | "large";
 
 interface CTAProps {
@@ -46,10 +51,13 @@ const CTA = ({
 
   const variantClasses = {
     primary: "bg-gradient-to-r text-white",
-    secondary: "bg-white dark:bg-slate-800 text-gray-900 dark:text-white border-2 border-primary",
-    gradient: "bg-gradient-to-r from-primary via-primary/95 to-primary/90 text-white",
+    secondary:
+      "bg-white dark:bg-slate-800 text-gray-900 dark:text-white border-2 border-primary",
+    gradient:
+      "bg-gradient-to-r from-primary via-primary/95 to-primary/90 text-white",
     dark: "bg-slate-900 text-white border border-slate-700",
-    minimal: "bg-gray-50 dark:bg-slate-800/50 text-gray-900 dark:text-white border border-gray-200 dark:border-slate-700",
+    minimal:
+      "bg-gray-50 dark:bg-slate-800/50 text-gray-900 dark:text-white border border-gray-200 dark:border-slate-700",
   };
 
   return (
@@ -67,44 +75,46 @@ const CTA = ({
         )}
 
         {/* Title */}
-        <h2 className={`font-bold mb-4 ${
-          size === "large" ? "text-4xl md:text-5xl" : "text-2xl md:text-3xl"
-        }`}>
+        <h2
+          className={`font-bold mb-4 ${
+            size === "large" ? "text-4xl md:text-5xl" : "text-2xl md:text-3xl"
+          }`}
+        >
           {title}
         </h2>
 
         {/* Description */}
-        <p className={`my-10 ${
-          variant === "primary" || variant === "gradient" || variant === "dark"
-            ? ""
-            : "text-gray-600 dark:text-gray-400"
-        } ${size === "large" ? "text-lg" : "text-base"}`}>
+        <p
+          className={`my-10 ${
+            variant === "primary" ||
+            variant === "gradient" ||
+            variant === "dark"
+              ? ""
+              : "text-gray-600 dark:text-gray-400"
+          } ${size === "large" ? "text-lg" : "text-base"}`}
+        >
           {description}
         </p>
 
         {/* Buttons */}
 
-
-
-<div>
-  <Button size="lg" asChild className="px-5">
+        <div>
+          <Button size="lg" asChild className="px-5">
             <Link href="/">
               <CheckCheck className="w-5 h-5 mr-2" />
-              Apply BSN Program
+              Apply Now
             </Link>
           </Button>
 
           <Button variant="link" size="lg" asChild>
             <Link href="/">
               <ArrowRight className="w-5 h-5 mr-2" />
-              Apply CNA Program
+              Eligibility Criteria
             </Link>
           </Button>
-</div>
+        </div>
 
-
-
-{/* 
+        {/* 
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
@@ -158,9 +168,7 @@ export const CTASections = {
   ),
 
   // Dark CTA - Dark theme
-  Dark: (props: Omit<CTAProps, "variant">) => (
-    <CTA {...props} variant="dark" />
-  ),
+  Dark: (props: Omit<CTAProps, "variant">) => <CTA {...props} variant="dark" />,
 
   // Minimal CTA - Clean and simple
   Minimal: (props: Omit<CTAProps, "variant">) => (
@@ -168,14 +176,10 @@ export const CTASections = {
   ),
 
   // Large CTA - Prominent and spacious
-  Large: (props: Omit<CTAProps, "size">) => (
-    <CTA {...props} size="large" />
-  ),
+  Large: (props: Omit<CTAProps, "size">) => <CTA {...props} size="large" />,
 
   // Small CTA - Compact
-  Small: (props: Omit<CTAProps, "size">) => (
-    <CTA {...props} size="small" />
-  ),
+  Small: (props: Omit<CTAProps, "size">) => <CTA {...props} size="small" />,
 };
 
 /**

@@ -59,6 +59,21 @@ const Logo = ({ href = "/", external = false, className = "" }: LogoProps) => {
     //     </div>
     //   </div>
     // </div>
+    <Image
+      src="/images/Logo-Naz-Nursing-Bijaja.webp"
+      alt="NNIOHS Logo"
+      width={100}
+      height={80}
+      className="h-16 w-auto -my-1.5"
+      priority
+    />
+  );
+
+  if (external) {
+    return (
+      // <a href={href} aria-label="Bijaja Home" className={`Bijaja-Css-Logo ${className}`} target="_blank" rel="noopener noreferrer">
+      //   {logoMarkup}
+      // </a>
       <Image
         src="/images/logo-nniohs.png"
         alt="NNIOHS Logo"
@@ -67,26 +82,15 @@ const Logo = ({ href = "/", external = false, className = "" }: LogoProps) => {
         className="h-16 w-auto -my-1.5"
         priority
       />
-  );
-
-  if (external) {
-    return (
-      // <a href={href} aria-label="Bijaja Home" className={`Bijaja-Css-Logo ${className}`} target="_blank" rel="noopener noreferrer">
-      //   {logoMarkup}
-      // </a>
-         <Image
-          src="/images/logo-nniohs.png"
-          alt="NNIOHS Logo"
-          width={100}
-          height={80}
-          className="h-16 w-auto -my-1.5"
-          priority
-        />
     );
   }
 
   return (
-    <Link href={href} aria-label="Bijaja Home" className={`Bijaja-Css-Logo ${className}`}>
+    <Link
+      href={href}
+      aria-label="Bijaja Home"
+      className={`Bijaja-Css-Logo ${className}`}
+    >
       {logoMarkup}
     </Link>
   );
