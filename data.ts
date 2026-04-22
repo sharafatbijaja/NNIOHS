@@ -420,6 +420,7 @@ export const skillCategories = [
       
       { name: "Paramedical Courses", icon: Layers },
       { name: "Aid Nurse Certificate One Year", icon: Layout },
+{ name: "Workshops", icon: Layout },
       { name: "Seminars", icon: Globe },
     ],
   },
