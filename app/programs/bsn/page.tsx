@@ -82,7 +82,7 @@ const BSNPage = () => {
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Age Requirement</h4>
-                  <p className="text-gray-600 dark:text-gray-400">17-25 years</p>
+                  <p className="text-gray-600 dark:text-gray-400">18-35 years</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">

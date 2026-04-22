@@ -44,7 +44,7 @@ const CNAPage = () => {
             <div className="bg-primary/5 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Program Duration</h3>
               <p className="text-3xl font-bold text-primary mb-2">2 Years</p>
-              <p className="text-gray-600 dark:text-gray-400">4 Semesters</p>
+              <p className="text-gray-600 dark:text-gray-400">Year-wise Program</p>
             </div>
             <div className="bg-primary/5 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Diploma Awarded</h3>
@@ -73,7 +73,7 @@ const CNAPage = () => {
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Subject Background</h4>
-                  <p className="text-gray-600 dark:text-gray-400">Science</p>
+                  <p className="text-gray-600 dark:text-gray-400">Science (45% marks)</p>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ const CNAPage = () => {
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Age Requirement</h4>
-                  <p className="text-gray-600 dark:text-gray-400">16-25 years</p>
+                  <p className="text-gray-600 dark:text-gray-400">18-30 years</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
