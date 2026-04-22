@@ -1,6 +1,6 @@
 "use client";
 
-import { programs } from "@/data/programsData";
+import { programs } from "@/data";
 import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
 import Link from "next/link";

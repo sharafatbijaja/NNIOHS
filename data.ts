@@ -417,7 +417,7 @@ export const skillCategories = [
     skills: [
       { name: "Generic BS Nursing", icon: GraduationCap },
       { name: "CNA Diploma", icon: BookOpen },
-      { name: "Post RN BSN", icon: ClipboardCheck },
+      
       { name: "Paramedical Courses", icon: Layers },
       { name: "AID Nurse Certificate One Year", icon: Layout },
       { name: "Seminars", icon: Globe },
@@ -641,6 +641,341 @@ export const partners = [
   { name: "CloudNine", logo: "CN", color: "from-orange-500 to-orange-600" },
   { name: "NextGen", logo: "NG", color: "from-pink-500 to-pink-600" },
   { name: "SmartSolutions", logo: "SS", color: "from-cyan-500 to-cyan-600" },
+];
+
+/**
+ * Gallery Categories
+ * Different categories for filtering gallery items
+ */
+export const galleryCategories = [
+  { id: "campus", name: "Campus Photos" },
+  { id: "labs", name: "Skills Lab & Labs" },
+  { id: "clinical", name: "Clinical Training" },
+  { id: "events", name: "Events & Celebrations" },
+  { id: "student-life", name: "Student Life" },
+];
+
+/**
+ * Gallery Item Interface
+ * Type definition for gallery items
+ */
+export interface GalleryItem {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+  featured?: boolean;
+}
+
+/**
+ * Gallery Items
+ * Collection of visual works and creative pieces
+ */
+export const galleryItems: GalleryItem[] = [
+  {
+    id: "campus-main",
+    title: "Main Campus Building",
+    description: "Beautiful view of our modern campus building with state-of-the-art facilities.",
+    image: "/images/p1.jpg",
+    category: "campus",
+    featured: true,
+  },
+  {
+    id: "skills-lab-1",
+    title: "Nursing Skills Lab",
+    description: "Advanced nursing skills lab equipped with modern medical simulators and equipment.",
+    image: "/images/p2.jpg",
+    category: "labs",
+    featured: true,
+  },
+  {
+    id: "clinical-training-1",
+    title: "Clinical Rotation",
+    description: "Students gaining hands-on experience during clinical rotation at Civil Hospital.",
+    image: "/images/p3.jpg",
+    category: "clinical",
+    featured: true,
+  },
+  {
+    id: "nurses-day-2025",
+    title: "International Nurses Day 2025",
+    description: "Celebrating International Nurses Day with our dedicated nursing students and faculty.",
+    image: "/images/p4.jpg",
+    category: "events",
+    featured: true,
+  },
+  {
+    id: "student-life-1",
+    title: "Student Activities",
+    description: "Students participating in various extracurricular activities and workshops.",
+    image: "/images/p5.jpg",
+    category: "student-life",
+    featured: true,
+  },
+  {
+    id: "campus-library",
+    title: "Library & Computer Lab",
+    description: "Modern library with extensive collection and computer lab for research and learning.",
+    image: "/images/p6.jpg",
+    category: "campus",
+  },
+  {
+    id: "anatomy-lab",
+    title: "Anatomy & Physiology Lab",
+    description: "Well-equipped anatomy lab with models and specimens for practical learning.",
+    image: "/images/p1.jpg",
+    category: "labs",
+  },
+  {
+    id: "clinical-hands-on",
+    title: "Hands-on Training",
+    description: "Students practicing patient care under expert supervision during clinical training.",
+    image: "/images/p2.jpg",
+    category: "clinical",
+  },
+  {
+    id: "graduation-ceremony",
+    title: "Graduation Ceremony 2025",
+    description: "Proud moment as our nursing graduates receive their degrees and certificates.",
+    image: "/images/p3.jpg",
+    category: "events",
+  },
+  {
+    id: "group-study",
+    title: "Group Study Session",
+    description: "Students collaborating and learning together in our modern study areas.",
+    image: "/images/p4.jpg",
+    category: "student-life",
+  },
+  {
+    id: "smart-classroom",
+    title: "Smart Classroom",
+    description: "Technology-enabled smart classroom with multimedia learning resources.",
+    image: "/images/p5.jpg",
+    category: "campus",
+  },
+  {
+    id: "simulation-training",
+    title: "Simulation Training",
+    description: "Advanced simulation training for real-world medical scenarios.",
+    image: "/images/p6.jpg",
+    category: "labs",
+  },
+  {
+    id: "hospital-affiliation",
+    title: "Hospital Affiliation",
+    description: "Our students training at Dr. Ruth K.M. Pfau Civil Hospital.",
+    image: "/images/p1.jpg",
+    category: "clinical",
+  },
+  {
+    id: "workshop-seminar",
+    title: "Workshop & Seminar",
+    description: "Educational workshop on advanced nursing techniques and patient care.",
+    image: "/images/p2.jpg",
+    category: "events",
+  },
+  {
+    id: "sports-day",
+    title: "Annual Sports Day",
+    description: "Students showcasing their athletic talents during annual sports day.",
+    image: "/images/p3.jpg",
+    category: "student-life",
+  },
+];
+
+/**
+ * Portfolio Categories
+ * Different categories for filtering portfolio items
+ */
+export const portfolioCategories = [
+  { id: "web-development", name: "Web Development" },
+  { id: "mobile-apps", name: "Mobile Apps" },
+  { id: "ui-ux", name: "UI/UX Design" },
+  { id: "ecommerce", name: "E-Commerce" },
+  { id: "ai-ml", name: "AI & Machine Learning" },
+];
+
+/**
+ * Portfolio Item Interface
+ * Type definition for portfolio items
+ */
+export interface PortfolioItem {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+  technologies: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  featured?: boolean;
+}
+
+/**
+ * Portfolio Items
+ * Extended portfolio data with categories and additional metadata
+ */
+export const portfolioItems: PortfolioItem[] = [
+  {
+    id: "ecommerce-platform",
+    title: "E-Commerce Platform",
+    description: "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
+    image: "/images/p1.jpg",
+    category: "ecommerce",
+    technologies: ["Next.js", "TypeScript", "Stripe", "MongoDB", "Tailwind CSS"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+    featured: true,
+  },
+  {
+    id: "task-management",
+    title: "Task Management App",
+    description: "Collaborative project management tool with real-time updates, Kanban boards, and team analytics.",
+    image: "/images/p2.jpg",
+    category: "web-development",
+    technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Redis"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+    featured: true,
+  },
+  {
+    id: "ai-content-generator",
+    title: "AI Content Generator",
+    description: "GPT-powered content creation platform for marketers with templates and workflow automation.",
+    image: "/images/p3.jpg",
+    category: "ai-ml",
+    technologies: ["React", "Python", "OpenAI", "FastAPI", "PostgreSQL"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "real-estate-platform",
+    title: "Real Estate Platform",
+    description: "Property listing platform with virtual tours, mortgage calculator, and agent booking system.",
+    image: "/images/p4.jpg",
+    category: "web-development",
+    technologies: ["Vue.js", "Node.js", "MongoDB", "Maps API", "AWS"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "fitness-tracker",
+    title: "Fitness Tracker",
+    description: "Cross-platform mobile app for workout tracking, nutrition logging, and progress analytics.",
+    image: "/images/p5.jpg",
+    category: "mobile-apps",
+    technologies: ["React Native", "Firebase", "Redux", "Expo"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "design-system",
+    title: "Design System",
+    description: "Comprehensive UI component library with documentation, theming, and accessibility features.",
+    image: "/images/p6.jpg",
+    category: "ui-ux",
+    technologies: ["Figma", "Storybook", "React", "TypeScript", "CSS Modules"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "chatbot-platform",
+    title: "AI Chatbot Platform",
+    description: "Intelligent chatbot builder with NLP capabilities, multi-channel deployment, and analytics.",
+    image: "/images/p1.jpg",
+    category: "ai-ml",
+    technologies: ["Python", "TensorFlow", "Node.js", "React", "WebSocket"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "food-delivery",
+    title: "Food Delivery App",
+    description: "On-demand food delivery platform with real-time tracking, payment integration, and restaurant management.",
+    image: "/images/p2.jpg",
+    category: "mobile-apps",
+    technologies: ["Flutter", "Firebase", "Google Maps", "Stripe"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "dashboard-analytics",
+    title: "Analytics Dashboard",
+    description: "Business intelligence dashboard with data visualization, reporting, and predictive analytics.",
+    image: "/images/p3.jpg",
+    category: "web-development",
+    technologies: ["Next.js", "D3.js", "Python", "PostgreSQL", "Redis"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "brand-identity",
+    title: "Brand Identity System",
+    description: "Complete brand identity design including logo, color palette, typography, and brand guidelines.",
+    image: "/images/p4.jpg",
+    category: "ui-ux",
+    technologies: ["Figma", "Adobe Illustrator", "Adobe Photoshop"],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "learning-platform",
+    title: "E-Learning Platform",
+    description: "Online learning management system with video courses, quizzes, certificates, and progress tracking.",
+    image: "/images/p5.jpg",
+    category: "web-development",
+    technologies: ["Next.js", "MongoDB", "AWS S3", "Stripe", "WebRTC"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "social-media-app",
+    title: "Social Media App",
+    description: "Feature-rich social networking platform with posts, stories, messaging, and real-time notifications.",
+    image: "/images/p6.jpg",
+    category: "mobile-apps",
+    technologies: ["React Native", "Firebase", "GraphQL", "Apollo"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+  },
+];
+
+/**
+ * Programs Data
+ * Academic programs offered by the institute
+ */
+export const programs = [
+  {
+    id: 1,
+    name: "BSN (Bachelor of Science in Nursing)",
+    icon: GraduationCap,
+    description: "Comprehensive 4-year nursing degree program providing advanced clinical skills, theoretical knowledge, and professional development for aspiring registered nurses.",
+    duration: "4 Years",
+    eligibility: "F.Sc Pre-Medical with 50% marks",
+    features: [
+      "DUHS Affiliated",
+      "Clinical Rotations",
+      "Modern Labs",
+      "Experienced Faculty"
+    ],
+    href: "/programs/bsn"
+  },
+  {
+    id: 2,
+    name: "CNA (Certified Nursing Assistant)",
+    icon: BookOpen,
+    description: "Intensive 2-year certification program focused on fundamental nursing skills, patient care techniques, and practical healthcare training for entry-level nursing positions.",
+    duration: "2 Years",
+    eligibility: "Matriculation with Science",
+    features: [
+      "Hands-on Training",
+      "Quick Career Start",
+      "Industry Recognized",
+      "Job Placement Support"
+    ],
+    href: "/programs/cna"
+  }
 ];
 
 /**

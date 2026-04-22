@@ -2,7 +2,7 @@
 
 import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
-import { portfolioCategories, portfolioItems } from "@/data/portfolioData";
+import { portfolioCategories, portfolioItems } from "@/data";
 import { useState } from "react";
 import { Filter, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";

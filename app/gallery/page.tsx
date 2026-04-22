@@ -2,7 +2,7 @@
 
 import PageWrapper from "@/components/common/PageWrapper";
 import PageTitle from "@/components/common/PageTitle";
-import { galleryCategories, galleryItems } from "@/data/galleryData";
+import { galleryCategories, galleryItems } from "@/data";
 import { useState } from "react";
 import { Filter, ZoomIn, Heart, Share2 } from "lucide-react";
 import Image from "next/image";
