@@ -975,36 +975,6 @@ export const programs = [
       "Job Placement Support"
     ],
     href: "/programs/cna"
-  },
-  {
-    id: 3,
-    name: "One Year Certification Course",
-    icon: ClipboardCheck,
-    description: "Comprehensive 1-year paramedical certification program providing essential healthcare skills, medical terminology, and practical training for various healthcare support roles.",
-    duration: "1 Year",
-    eligibility: "Matriculation with Science",
-    features: [
-      "Quick Certification",
-      "Practical Skills",
-      "Healthcare Support",
-      "Industry Recognized"
-    ],
-    href: "/programs/one-year-certification"
-  },
-  {
-    id: 4,
-    name: "One Year Aid Nurse Certificate",
-    icon: HeartPulse,
-    description: "Specialized 1-year program focused on nursing assistance, patient care fundamentals, and emergency medical response for aspiring healthcare support professionals.",
-    duration: "1 Year",
-    eligibility: "Matriculation with Science",
-    features: [
-      "Patient Care Focus",
-      "Emergency Response",
-      "Clinical Training",
-      "Quick Career Entry"
-    ],
-    href: "/programs/one-year-aid-nurse"
   }
 ];
 

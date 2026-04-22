@@ -178,7 +178,7 @@ const ProgramsPage = () => {
             href="/admissions"
             className="inline-flex items-center px-8 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all font-semibold"
           >
-            Apply Now
+            Get Free Consultaion
           </Link>
         </div>
       </section>
