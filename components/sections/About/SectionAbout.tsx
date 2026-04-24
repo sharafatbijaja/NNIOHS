@@ -59,7 +59,7 @@ const SectionAbout = () => {
         <div>
           {/* Next.js Image component: optimizes images automatically */}
           <Image
-            src="/images/about-us2.jpg" // Image path from public folder
+            src="/images/about-us-homepage.jpg" // Image path from public folder
             alt="About Us" // Alt text for SEO and accessibility
             width={700} // Image width
             height={500} // Image height

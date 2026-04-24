@@ -96,72 +96,144 @@ const BSNPage = () => {
           </div>
         </div>
 
-        {/* Curriculum Outline (Year-wise) */}
+        {/* Curriculum Outline (Semester-wise) */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <BookOpen className="w-8 h-8 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Curriculum Outline (Year-wise)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Curriculum Outline (Semester-wise)</h2>
           </div>
           
           <div className="space-y-8">
+            {/* First Year */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                 <span className="bg-primary text-white text-sm px-3 py-1 rounded-full">Year 1</span>
-                Foundation Year
               </h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {["Anatomy & Physiology", "Microbiology", "Biochemistry", "Psychology", "Nutrition", "English", "Computer Applications", "Islamic Studies"].map((subject, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                    {subject}
-                  </li>
-                ))}
-              </ul>
+              
+              <div className="space-y-4">
+                <div className="bg-primary/5 rounded-xl p-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Semester I</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {["Fundamental of Nursing-I", "Anatomy & Physiology-I", "English-I", "Microbiology", "Information & Communication Technology*", "Biochemistry for Nurses*", "Ideology & Constitution of Pakistan*"].map((subject, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="bg-primary/5 rounded-xl p-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Semester II</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {["Fundamental of Nursing-II", "Anatomy & Physiology-II", "Theoretical Basis of Nursing*", "Quantitative Reasoning-I*", "Islamic Studies / Ethics*", "Pakistan Studies*", "Applied Nutrition*"].map((subject, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
             
+            {/* Second Year */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                 <span className="bg-primary text-white text-sm px-3 py-1 rounded-full">Year 2</span>
-                Advanced Foundation
               </h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {["Medical-Surgical Nursing I", "Pediatric Nursing I", "Obstetric & Gynecological Nursing I", "Mental Health Nursing", "Community Health Nursing I", "Nursing Research Methods", "Nursing Administration I", "Pharmacology"].map((subject, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                    {subject}
-                  </li>
-                ))}
-              </ul>
+              
+              <div className="space-y-4">
+                <div className="bg-primary/5 rounded-xl p-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Semester III</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {["Medical Surgical Nursing-I", "Health Assessment-I", "Pathophysiology-I", "Clinical Pharmacology and Drug Administration-I", "Professional Communication Skills"].map((subject, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="bg-primary/5 rounded-xl p-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Semester IV</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {["Medical Surgical Nursing – II", "Health Assessment-II", "Pathophysiology-II", "Clinical Pharmacology and Drug Administration-II", "Professional Ethics for Nurses"].map((subject, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
 
+            {/* Third Year */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                 <span className="bg-primary text-white text-sm px-3 py-1 rounded-full">Year 3</span>
-                Specialization
               </h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {["Medical-Surgical Nursing II", "Pediatric Nursing II", "Obstetric & Gynecological Nursing II", "Critical Care Nursing", "Emergency Nursing", "Nursing Ethics", "Nursing Administration II", "Clinical Practicum I"].map((subject, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                    {subject}
-                  </li>
-                ))}
-              </ul>
+              
+              <div className="space-y-4">
+                <div className="bg-primary/5 rounded-xl p-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Semester V</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {["Pediatric Health Nursing", "Maternal, Neonatal and Child Health Nursing", "Epidemiology", "Infectious Diseases", "Civics and Community Engagement"].map((subject, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="bg-primary/5 rounded-xl p-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Semester VI</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {["Public Health Nursing", "Mental Health Nursing", "Principles of Teaching & Learning", "Introduction to Biostatistics", "Culture, Health & Society"].map((subject, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
 
+            {/* Fourth Year */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                 <span className="bg-primary text-white text-sm px-3 py-1 rounded-full">Year 4</span>
-                Advanced Practice
               </h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {["Advanced Medical-Surgical Nursing", "Advanced Pediatric Nursing", "Advanced Obstetric Nursing", "Leadership & Management", "Nursing Informatics", "Research Project", "Clinical Practicum II", "Comprehensive Examination"].map((subject, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                    {subject}
-                  </li>
-                ))}
-              </ul>
+              
+              <div className="space-y-4">
+                <div className="bg-primary/5 rounded-xl p-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Semester VII</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {["Critical Care Nursing", "Introduction to Nursing Research", "Leadership & Management", "Elective", "Entrepreneurship"].map((subject, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="bg-primary/5 rounded-xl p-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Semester VIII</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {["Geriatric Nursing", "Trends and Issues in Health Care", "Elective", "Expository Writing", "Clinical Practicum"].map((subject, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

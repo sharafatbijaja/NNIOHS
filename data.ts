@@ -46,9 +46,10 @@ import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 export const stats = [
    { label: "Years Established", value: "8+" },
   { label: "Students Graduated", value: "100+" },
+    { label: "Batch Passout", value: "15" },
   { label: "Faculty Members", value: "15+" },
   { label: "Hospital Affiliates", value: "3" },
-  { label: "Batch Passout", value: "15" },
+
   // { label: "Years Experience", value: "8+" },
   // { label: "Projects Completed", value: "100+" },
   // { label: "Shopify Stores", value: "25+" },
@@ -58,7 +59,7 @@ export const stats = [
 export const highlights = [
    { icon: MapPin, text: "Karachi, Pakistan" },
   { icon: Briefcase, text: "DUHS Affiliated Program" },
-  { icon: GraduationCap, text: "NPNMC Recognized Institute" },
+  { icon: GraduationCap, text: "PNMC Recognized Institute" },
   { icon: Coffee, text: "Excellence in Nursing Education" },
   // { icon: MapPin, text: "8+ years in full-stack, SEO and digital marketing" },
   // { icon: Briefcase, text: "Prompt engineering for AI content and automation" },

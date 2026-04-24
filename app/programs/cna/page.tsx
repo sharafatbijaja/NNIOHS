@@ -110,10 +110,10 @@ const CNAPage = () => {
                 Foundation & Basic Skills
               </h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {["Patient Care & Hygiene", "Vital Signs Monitoring", "Wound Care & Dressing", "Medication Administration", "Infection Control", "CPR & Basic Life Support", "Patient Mobility Assistance", "Medical Documentation"].map((skill, index) => (
+                {["Fundamental of Nursing", "Anatomy & Physiology", "English", "Islamiat"].map((subject, index) => (
                   <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
                     <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                    {skill}
+                    {subject}
                   </li>
                 ))}
               </ul>
@@ -125,10 +125,10 @@ const CNAPage = () => {
                 Advanced Training & Practice
               </h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {["Hospital Rotations", "Lab Practice Sessions", "Simulation Training", "Clinical Supervision", "Emergency Response Training", "Communication Skills", "Patient Safety Protocols", "Team Collaboration"].map((component, index) => (
+                {["Community Health Nursing", "Medical Surgical Nursing", "Pediatric Nursing", "English-II"].map((subject, index) => (
                   <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
                     <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                    {component}
+                    {subject}
                   </li>
                 ))}
               </ul>
