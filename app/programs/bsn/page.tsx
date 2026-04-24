@@ -6,12 +6,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Clock, BookOpen, Briefcase, CheckCircle, ArrowRight, Send } from "lucide-react";
 
-const BSNPage = () => {
+const GBSNPage = () => {
   return (
     <PageWrapper>
       <PageTitle
-        title="BSN Degree Program"
-        subtitle="Bachelor of Science in Nursing"
+        title="GBSN Degree Program"
+        subtitle="Generic Bachelor of Science in Nursing"
         description="Comprehensive 4-year nursing degree program for aspiring registered nurses"
       />
 
@@ -28,7 +28,7 @@ const BSNPage = () => {
                 Program Introduction
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                The Bachelor of Science in Nursing (BSN) is a comprehensive 4-year degree program that prepares students for a rewarding career in nursing. Our DUHS-affiliated program combines theoretical knowledge with extensive clinical practice, producing competent and compassionate nursing professionals.
+                The Generic Bachelor of Science in Nursing (GBSN) is a comprehensive 4-year degree program that prepares students for a rewarding career in nursing. Our DUHS-affiliated program combines theoretical knowledge with extensive clinical practice, producing competent and compassionate nursing professionals.
               </p>
             </div>
           </div>
@@ -48,8 +48,8 @@ const BSNPage = () => {
             </div>
             <div className="bg-primary/5 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Degree Awarded</h3>
-              <p className="text-3xl font-bold text-primary mb-2">BSN</p>
-              <p className="text-gray-600 dark:text-gray-400">Bachelor of Science in Nursing</p>
+              <p className="text-3xl font-bold text-primary mb-2">GBSN</p>
+              <p className="text-gray-600 dark:text-gray-400">Generic Bachelor of Science in Nursing</p>
             </div>
           </div>
         </div>
@@ -289,4 +289,4 @@ const BSNPage = () => {
   );
 };
 
-export default BSNPage;
+export default GBSNPage;

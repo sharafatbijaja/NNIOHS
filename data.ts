@@ -951,7 +951,7 @@ export const portfolioItems: PortfolioItem[] = [
 export const programs = [
   {
     id: 1,
-    name: "BSN (Bachelor of Science in Nursing)",
+    name: "GBSN (Generic Bachelor of Science in Nursing)",
     icon: GraduationCap,
     description: "Comprehensive 4-year nursing degree program providing advanced clinical skills, theoretical knowledge, and professional development for aspiring registered nurses.",
     duration: "4 Years",

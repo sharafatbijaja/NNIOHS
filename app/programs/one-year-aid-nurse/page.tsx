@@ -44,7 +44,7 @@ const OneYearAidNursePage = () => {
             <div className="bg-primary/5 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Program Duration</h3>
               <p className="text-3xl font-bold text-primary mb-2">1 Year</p>
-              <p className="text-gray-600 dark:text-gray-400">2 Semesters</p>
+              <p className="text-gray-600 dark:text-gray-400">Year-wise</p>
             </div>
             <div className="bg-primary/5 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Certificate Awarded</h3>
@@ -73,7 +73,7 @@ const OneYearAidNursePage = () => {
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Minimum Marks</h4>
-                  <p className="text-gray-600 dark:text-gray-400">40% in Matric</p>
+                  <p className="text-gray-600 dark:text-gray-400">45% in Matric</p>
                 </div>
               </div>
             </div>
@@ -96,44 +96,21 @@ const OneYearAidNursePage = () => {
           </div>
         </div>
 
-        {/* Curriculum Outline (Semester-wise) */}
+        {/* Curriculum Outline */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-slate-700">
           <div className="flex items-center gap-3 mb-6">
             <BookOpen className="w-8 h-8 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Curriculum Outline (Semester-wise)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Curriculum Outline</h2>
           </div>
           
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="bg-primary text-white text-sm px-3 py-1 rounded-full">Semester 1</span>
-                Nursing Fundamentals
-              </h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {["Introduction to Nursing", "Basic Patient Care", "Medical Terminology", "Body Mechanics & Positioning", "Vital Signs Assessment", "Infection Prevention", "Patient Hygiene", "Communication in Healthcare"].map((subject, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                    {subject}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="bg-primary text-white text-sm px-3 py-1 rounded-full">Semester 2</span>
-                Advanced Nursing Skills
-              </h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {["Advanced Patient Care", "Emergency Response", "Wound Care & Dressing", "Medication Safety", "Feeding & Nutrition", "Patient Mobility", "Clinical Practicum", "Final Assessment"].map((subject, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                    {subject}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {["Fundamental of Nursing", "Anatomy Physiology", "Microbiology", "Pharmacology", "First Aid", "English"].map((subject, index) => (
+              <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                {subject}
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Career Opportunities */}

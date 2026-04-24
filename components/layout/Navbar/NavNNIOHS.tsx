@@ -110,8 +110,8 @@ const Nav = ({ openNav }: props) => {
                   </Link>
                 )}
 
-                {/* Mega Menu for Academic */}
-                {link.name === "Academic" && link.dropdown && isDropdownOpen && (
+                {/* Mega Menu for Programs */}
+                {link.name === "Programs" && link.dropdown && isDropdownOpen && (
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-150 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-gray-100 dark:border-slate-700 p-8 z-50">
                     <div className="grid grid-cols-2 gap-8">
                       {/* Column 1: Programs */}
@@ -187,7 +187,7 @@ const Nav = ({ openNav }: props) => {
                 )}
 
                 {/* Simple Dropdown for other items */}
-                {link.name !== "Academic" && link.dropdown && isDropdownOpen && (
+                {link.name !== "Programs" && link.dropdown && isDropdownOpen && (
                   <div className="absolute top-full left-0 mt-5 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-slate-700 p-2 z-50">
                     {link.dropdown.map((subLink, subIndex) => (
                       <Link

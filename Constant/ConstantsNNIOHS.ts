@@ -4,11 +4,11 @@ export const NavLinks = [
     href: "/",
   },
   {
-    name: "Academic",
+    name: "Programs",
     href: "#",
     dropdown: [
       { name: "Programs", href: "/programs" },
-      { name: "BSN", href: "/programs/bsn" },
+      { name: "GBSN", href: "/programs/bsn" },
       { name: "CNA", href: "/programs/cna" },
       { name: "Clinical Training", href: "/clinical-training" },
       { name: "Faculty", href: "/faculty" },
