@@ -119,7 +119,7 @@ const SectionAbout = () => {
       {/* Statistics section: Shows credibility metrics */}
       <div className="max-w-250 mt-16 mx-auto">
         {/* Grid layout: 2 columns on mobile, 4 on large screens */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-6">
           {/* Map through stats array */}
           {stats.map((stat) => {
             return (

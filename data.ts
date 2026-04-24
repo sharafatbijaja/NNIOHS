@@ -48,6 +48,7 @@ export const stats = [
   { label: "Students Graduated", value: "100+" },
   { label: "Faculty Members", value: "15+" },
   { label: "Hospital Affiliates", value: "3" },
+  { label: "Batch Passout", value: "15" },
   // { label: "Years Experience", value: "8+" },
   // { label: "Projects Completed", value: "100+" },
   // { label: "Shopify Stores", value: "25+" },
@@ -419,7 +420,7 @@ export const skillCategories = [
       { name: "CNA Diploma", icon: BookOpen },
       
       { name: "Paramedical Courses", icon: Layers },
-      { name: "Aid Nurse Certificate One Year", icon: Layout },
+      { name: "Aid Nurse Certificate", icon: Layout },
 { name: "Workshops", icon: Layout },
       { name: "Seminars", icon: Globe },
     ],
