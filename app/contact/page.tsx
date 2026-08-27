@@ -10,7 +10,7 @@ const ContactPage = () => {
       <PageTitle
         title="Contact"
         subtitle="Get In Touch"
-        description="Let's discuss your project and bring your ideas to life"
+        description="Contact Ikhlas Institute of Nursing for admissions and program information"
       />
       <ContactSection />
     </PageWrapper>

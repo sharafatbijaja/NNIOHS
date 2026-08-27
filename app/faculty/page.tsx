@@ -56,7 +56,7 @@ const FacultyPage = () => {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Professional Background</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Madam Fatima brings over 25 years of distinguished experience in nursing education and healthcare administration. Her visionary leadership has been instrumental in establishing NNIOHS as a premier nursing institution in Pakistan.
+                    Madam Fatima brings over 25 years of distinguished experience in nursing education and healthcare administration. Her visionary leadership has been instrumental in establishing Ikhlas Institute of Nursing as a premier nursing institution in Pakistan.
                   </p>
                 </div>
                 <div>
@@ -249,7 +249,7 @@ const FacultyPage = () => {
                 <Mail className="w-5 h-5 text-primary" />
                 <div>
                   <p className="text-xs text-gray-500 dark:text-gray-400">Email</p>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white">faculty@nniohs.edu.pk</p>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white">info@ikhlasedu.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 bg-gray-50 dark:bg-slate-700 px-6 py-4 rounded-xl">

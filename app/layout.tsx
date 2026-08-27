@@ -16,8 +16,8 @@ const font = Inter({
 // SEO Metadata - Critical for search engine optimization
 export const metadata: Metadata = {
   // title: "Bijaja", 
-  title: "Naz Nursing Institute Karachi", // Page title for browser tab and search results
-  description: "Web Developer, UI/UX Designer", // Meta description for search results
+  title: "Ikhlas Institute of Nursing Karachi", // Page title for browser tab and search results
+  description: "Ikhlas Institute of Nursing, part of Ikhlas Group of Colleges, Karachi", // Meta description for search results
 };
 
 // Root Layout Component - Wrapper for entire application

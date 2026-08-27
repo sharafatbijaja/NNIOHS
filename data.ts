@@ -109,7 +109,7 @@ export const userReviewData = [
     profession: "Generic BS Nursing Graduate",
     userImage: "/images/student-images-for-reviews/Aqib Khan.jpeg",
     review:
-      "Excellent education and practical training at NNIOHS prepared me for a successful nursing career.",
+      "Excellent education and practical training at Ikhlas Institute of Nursing prepared me for a successful nursing career.",
   },
   {
     id: 2,
@@ -117,7 +117,7 @@ export const userReviewData = [
     profession: "CNA Diploma Graduate",
     userImage: "/images/student-images-for-reviews/Iqra.jpeg",
     review:
-      "The faculty is highly qualified and supportive. Best decision to join NNIOHS for my nursing education.",
+      "The faculty is highly qualified and supportive. Best decision to join Ikhlas Institute of Nursing for my nursing education.",
   },
   {
     id: 3,
@@ -125,7 +125,7 @@ export const userReviewData = [
     profession: "Healthcare Professional",
     userImage: "/images/student-images-for-reviews/Michelle Jawaid.jpeg",
     review:
-      "NNIOHS graduates are well-prepared and skilled. We hire many of their students at our hospital.",
+      "Ikhlas Institute of Nursing graduates are well-prepared and skilled. We hire many of their students at our hospital.",
   },
   {
     id: 4,
@@ -133,7 +133,7 @@ export const userReviewData = [
     profession: "Nursing Student",
     userImage: "/images/student-images-for-reviews/Muhammad Faizyab.jpeg",
     review:
-      "Amazing clinical training opportunities and modern facilities make NNIOHS the best choice.",
+      "Amazing clinical training opportunities and modern facilities make Ikhlas Institute of Nursing the best choice.",
   },
   {
     id: 5,
@@ -141,7 +141,7 @@ export const userReviewData = [
     profession: "Generic BS Nursing Graduate",
     userImage: "/images/student-images-for-reviews/Muhammad Umer.jpeg",
     review:
-      "The hands-on clinical experience I gained at NNIOHS was invaluable for my career in healthcare.",
+      "The hands-on clinical experience I gained at Ikhlas Institute of Nursing was invaluable for my career in healthcare.",
   },
   {
     id: 6,
@@ -149,7 +149,7 @@ export const userReviewData = [
     profession: "CNA Diploma Graduate",
     userImage: "/images/student-images-for-reviews/Muhammad Waseem.jpeg",
     review:
-      "NNIOHS provided me with the skills and confidence needed to excel in the nursing profession.",
+      "Ikhlas Institute of Nursing provided me with the skills and confidence needed to excel in the nursing profession.",
   },
   {
     id: 7,
@@ -157,7 +157,7 @@ export const userReviewData = [
     profession: "Healthcare Professional",
     userImage: "/images/student-images-for-reviews/Mumtaz Ali.jpeg",
     review:
-      "The comprehensive curriculum and experienced faculty at NNIOHS truly set it apart from other institutions.",
+      "The comprehensive curriculum and experienced faculty at Ikhlas Institute of Nursing truly set it apart from other institutions.",
   },
   {
     id: 8,
@@ -165,7 +165,7 @@ export const userReviewData = [
     profession: "Nursing Student",
     userImage: "/images/student-images-for-reviews/Shafquat Hussain.jpeg",
     review:
-      "I'm grateful for the excellent education and support I received at NNIOHS. It transformed my career.",
+      "I'm grateful for the excellent education and support I received at Ikhlas Institute of Nursing. It transformed my career.",
   },
   {
     id: 9,
@@ -173,7 +173,7 @@ export const userReviewData = [
     profession: "Generic BS Nursing Graduate",
     userImage: "/images/student-images-for-reviews/Syed Ibrar Hussain Shah.jpeg",
     review:
-      "NNIOHS's commitment to excellence in nursing education is unmatched. Highly recommended!",
+      "Ikhlas Institute of Nursing's commitment to excellence in nursing education is unmatched. Highly recommended!",
   },
   {
     id: 10,
@@ -181,7 +181,7 @@ export const userReviewData = [
     profession: "CNA Diploma Graduate",
     userImage: "/images/student-images-for-reviews/Waneeza.jpeg",
     review:
-      "The practical training and clinical rotations at NNIOHS gave me real-world experience in healthcare.",
+      "The practical training and clinical rotations at Ikhlas Institute of Nursing gave me real-world experience in healthcare.",
   },
 ];
 
@@ -189,21 +189,21 @@ export const userReviewData = [
 export const contactInfo = [
   {
     icon: Mail,
-    label: "Email",
-    value: "naznursing456@gmail.com",
-    href: "mailto:naznursing456@gmail.com",
+    label: "Website",
+    value: "www.ikhlasedu.com",
+    href: "https://ikhlasedu.com/",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "0312-2815799",
-    href: "tel:03122815799",
+    value: "0313-2324388 | 0345-9599914",
+    href: "tel:03132324388",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Karachi, Pakistan",
-    href: "#",
+    value: "Gulshan-e-Iqbal, Block 9, Karachi",
+    href: "https://www.google.com/maps/search/?api=1&query=Gulshan-e-Iqbal+Block+9+Karachi",
   },
 ];
 
@@ -256,7 +256,7 @@ export const experiences = [
   {
     type: "work",
     title: "Institute Establishment",
-    company: "Naz Nursing Institute",
+    company: "Ikhlas Institute of Nursing",
     period: "2017 - Present",
     description:
       "Established premier nursing education institution in Karachi under Waseem Welfare Trust, affiliated with DUHS and PNMC.",
@@ -292,7 +292,7 @@ export const experiences = [
   {
     type: "education",
     title: "Generic BS Nursing Program Launch",
-    company: "NNIOHS Academic Department",
+    company: "Ikhlas Academic Department",
     period: "2018 - Present",
     description:
       "Successfully launched 4-year Generic BS Nursing program with comprehensive curriculum and expert faculty.",

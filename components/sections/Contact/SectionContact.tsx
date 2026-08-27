@@ -14,7 +14,7 @@ const SectionContact = () => {
       {/* Background decorative elements */}
       <div className="pointer-events-none absolute left-0 top-20 h-96 w-96 rounded-full bg-gradient-to-br from-primary/10 to-blue-500/10 blur-3xl" />
       <div className="pointer-events-none absolute right-0 bottom-20 h-80 w-80 rounded-full bg-gradient-to-br from-purple-500/10 to-pink-500/10 blur-3xl" />
-      
+
       <div className="relative z-10 mx-auto">
         <SectionHeading
           title1="Get In"
@@ -41,7 +41,7 @@ const SectionContact = () => {
                 Start Your Nursing Career Today
               </h2>
               <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Naz Nursing Institute of Health Sciences is committed to providing high-quality, practical-oriented nursing education that meets national and international standards.
+                Ikhlas Institute of Nursing, part of Ikhlas Group of Colleges, is committed to providing high-quality nursing education with academic, laboratory, and clinical training.
                 We aim to produce competent, compassionate, and ethically grounded nursing professionals who can serve the healthcare sector with excellence and dedication.
               </p>
             </div>
@@ -107,7 +107,7 @@ const SectionContact = () => {
               className="rounded-2xl overflow-hidden shadow-xl border border-slate-200/80 dark:border-gray-700"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4631.021879259885!2d66.99587017617706!3d24.927532842568937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315676cdb92e5%3A0x451c1fd4badadba4!2sNaz%20Nursing%20Institute%20of%20Health%20Science!5e1!3m2!1sen!2s!4v1776172642373!5m2!1sen!2s"
+                src="https://www.google.com/maps?q=Ikhlas%20Institute%20of%20Nursing%20Gulshan-e-Iqbal%20Karachi&output=embed"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
@@ -124,7 +124,7 @@ const SectionContact = () => {
                 <MapPin className="h-6 w-6 text-primary" />
                 <div>
                   <p className="text-sm font-semibold text-slate-900 dark:text-white">Based in Karachi, Pakistan</p>
-                  <p className="text-xs text-slate-600 dark:text-slate-400">Affiliated with Dow University of Health Sciences</p>
+                  <p className="text-xs text-slate-600 dark:text-slate-400">Part of Ikhlas Group of Colleges | PNMC/PNC recognized</p>
                 </div>
               </div>
             </div>

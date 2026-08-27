@@ -84,27 +84,24 @@ const Nav = ({ openNav }: props) => {
                 {hasDropdown ? (
                   <button
                     onClick={() => handleDropdownToggle(link.name)}
-                    className={`font-semibold transition-all flex items-center gap-1 cursor-pointer ${
-                      isActive
-                        ? "text-primary"
-                        : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                    }`}
+                    className={`font-semibold transition-all flex items-center gap-1 cursor-pointer ${isActive
+                      ? "text-primary"
+                      : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+                      }`}
                   >
                     {link.name}
                     <ChevronDown
-                      className={`w-4 h-4 transition-transform ${
-                        isDropdownOpen ? "rotate-180" : ""
-                      }`}
+                      className={`w-4 h-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""
+                        }`}
                     />
                   </button>
                 ) : (
                   <Link
                     href={link.href}
-                    className={`font-semibold transition-all flex items-center gap-1 ${
-                      isActive
-                        ? "text-primary"
-                        : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                    }`}
+                    className={`font-semibold transition-all flex items-center gap-1 ${isActive
+                      ? "text-primary"
+                      : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+                      }`}
                   >
                     {link.name}
                   </Link>
@@ -128,11 +125,10 @@ const Nav = ({ openNav }: props) => {
                               onClick={() => setOpenDropdown(null)}
                             >
                               <div>
-                                <div className={`text-sm font-semibold ${
-                                  pathname === subLink.href
-                                    ? "text-primary"
-                                    : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
-                                }`}>
+                                <div className={`text-sm font-semibold ${pathname === subLink.href
+                                  ? "text-primary"
+                                  : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                                  }`}>
                                   {subLink.name}
                                 </div>
                               </div>
@@ -155,11 +151,10 @@ const Nav = ({ openNav }: props) => {
                               onClick={() => setOpenDropdown(null)}
                             >
                               <div>
-                                <div className={`text-sm font-semibold ${
-                                  pathname === subLink.href
-                                    ? "text-primary"
-                                    : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
-                                }`}>
+                                <div className={`text-sm font-semibold ${pathname === subLink.href
+                                  ? "text-primary"
+                                  : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                                  }`}>
                                   {subLink.name}
                                 </div>
                               </div>
@@ -197,11 +192,10 @@ const Nav = ({ openNav }: props) => {
                         onClick={() => setOpenDropdown(null)}
                       >
                         <div>
-                          <div className={`text-sm font-semibold ${
-                            pathname === subLink.href
-                              ? "text-primary"
-                              : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
-                          }`}>
+                          <div className={`text-sm font-semibold ${pathname === subLink.href
+                            ? "text-primary"
+                            : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                            }`}>
                             {subLink.name}
                           </div>
                         </div>

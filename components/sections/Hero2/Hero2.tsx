@@ -58,7 +58,7 @@ const TypingText = ({
   return (
     <span className="inline-block">
       {displayText}
-      <span className="ml-2 -mb-0.75 inline-block w-1 h-7  bg-red-500 animate-caret-blink " />
+      <span className="ml-2 -mb-0.75 inline-block w-1 h-7  bg-yellow-200 animate-caret-blink " />
     </span>
   );
 };
@@ -73,9 +73,9 @@ const Hero = () => {
       className="border-b border-primary/20 rounded-b-4xl cta-hero-bg relative overflow-hidden w-full min-h-[98vh] flex items-center justify-center bg-white text-slate-900 dark:bg-gray-950 dark:text-white"
     >
       <div className="cta-hero-orb-1"></div>
-            <div className="cta-hero-orb-2s"></div>
-            <div className="cta-hero-shimmer"></div>
-            <div className="cta-hero-grid"></div>
+      <div className="cta-hero-orb-2s"></div>
+      <div className="cta-hero-shimmer"></div>
+      <div className="cta-hero-grid"></div>
       <div className="pointer-events-none absolute -left-20 top-12 h-56 w-56 rounded-full bg-sky-400/20 blur-3xl dark:bg-cyan-500/20" />
       <div className="pointer-events-none absolute right-0 top-24 h-72 w-72 rounded-full bg-violet-300/20 blur-3xl dark:bg-violet-500/20" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-72 bg-linear-to-t from-slate-200/80 to-transparent dark:from-slate-900/80 dark:to-transparent" />
@@ -87,7 +87,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="text-xs inline-flex items-center gap-3 px-4 py-2 rounded-full mb-8  bg-slate-50 font-semibold uppercase tracking-widest text-slate-600 dark:border-slate-700 text-nowrap dark:bg-slate-900 dark:text-slate-300"
         >
-          <span className="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+          <span className="w-2 h-2 rounded-full bg-yellow-500 animate-ping"></span>
           {/* Open for opportunities */}
           Admissions Open for 2026
         </motion.span>
@@ -100,8 +100,8 @@ const Hero = () => {
           className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
         >
           {/* Sharafat{" "} */}
-          Naz Nursing Institute{" "}
-          <span className="text-primary li">of Health Sciences</span>
+          Ikhlas Institute{" "}
+          <span className="text-primary li">of Nursing</span>
         </motion.h1>
 
         {/* Typing Text */}
@@ -130,9 +130,8 @@ const Hero = () => {
           className="sm:text-base text-gray-600 dark:text-gray-300 mb-8 font-semibold"
         >
           {/* I build fast, scalable web apps and AI-powered systems that actually convert — not just look good. */}
-          A Project of Naz General Hospital | Affiliated with Dow University of
-          Health Sciences (DUHS) Generic BS Nursing (4 Years) & CNA (2 Years)
-          Programs
+          Part of Ikhlas Group of Colleges | PNMC/PNC-recognized Generic BS
+          Nursing (BSN) program with practical and clinical training
         </motion.p>
 
         {/* Buttons */}

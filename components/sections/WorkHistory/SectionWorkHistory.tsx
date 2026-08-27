@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 const timeline = [
   {
     role: "Founded by Waseem Welfare Trust",
-    company: "Naz Nursing Institute",
+    company: "Ikhlas Institute of Nursing",
     period: "2017",
     description:
       "Established with the noble goal of addressing the shortage of well-trained nursing professionals in Karachi and Pakistan.",
   },
   {
-    role: "Link with Naz General Hospital",
+    role: "Clinical training through affiliated hospitals",
     company: "Clinical Integration",
     period: "2017 – Present",
     description:

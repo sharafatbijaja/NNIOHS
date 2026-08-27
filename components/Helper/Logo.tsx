@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useSyncExternalStore } from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
+
+const subscribe = () => () => { };
 
 type LogoProps = {
   href?: string;
@@ -9,6 +14,14 @@ type LogoProps = {
 };
 
 const Logo = ({ href = "/", external = false, className = "" }: LogoProps) => {
+  const mounted = useSyncExternalStore(subscribe, () => true, () => false);
+  const { theme, systemTheme } = useTheme();
+
+  const currentTheme = theme === "system" ? systemTheme : theme;
+  const logoSource = mounted && currentTheme === "dark"
+    ? "/images/logoLight11.png"
+    : "/images/logoFinal.png";
+
   const logoMarkup = (
     // <div className="animated-text-box" role="img" aria-label="Bijaja logo">
     //   <div className="letters">
@@ -60,10 +73,10 @@ const Logo = ({ href = "/", external = false, className = "" }: LogoProps) => {
     //   </div>
     // </div>
     <Image
-      src="/images/Logo-Naz-Nursing-Bijaja.webp"
-      alt="NNIOHS Logo"
-      width={100}
-      height={80}
+      src={logoSource}
+      alt="Ikhlas Nursing Institute logo"
+      width={120}
+      height={90}
       className="h-16 w-auto -my-1.5"
       priority
     />
@@ -71,14 +84,12 @@ const Logo = ({ href = "/", external = false, className = "" }: LogoProps) => {
 
   if (external) {
     return (
-      // <a href={href} aria-label="Bijaja Home" className={`Bijaja-Css-Logo ${className}`} target="_blank" rel="noopener noreferrer">
-      //   {logoMarkup}
-      // </a>
+
       <Image
-        src="/images/logo-nniohs.png"
-        alt="NNIOHS Logo"
-        width={100}
-        height={80}
+        src={logoSource}
+        alt="Ikhlas Institute of Nursing logo"
+        width={120}
+        height={90}
         className="h-16 w-auto -my-1.5"
         priority
       />

@@ -41,7 +41,7 @@ const SectionAbout = () => {
         {/* Section title - "About Me" */}
         <SectionHeading
           title1="About"
-          title2="NNIOHS"
+          title2="Ikhlas"
           description="The premier nursing education institution since 2017 in Karachi"
         />
       </div>
@@ -77,16 +77,15 @@ const SectionAbout = () => {
 
           <p className="text-gray-700 dark:text-gray-300 mb-6 pt-6">
             {/* I deliver responsive custom WordPress, Shopify, ECWID, and HTML5 websites with clear UX, fast performance and strong SEO foundations. */}
-            Naz Nursing Institute of Health Sciences, established in 2017 by
-            Waseem Welfare Trust, is a premier nursing education institution in
-            Karachi. As a project of Naz General Hospital, we are producing highly skilled, ethical, and nursing
-            professionals for Pakistan and others.
+            Ikhlas Institute of Nursing, part of Ikhlas Group of Colleges, is a
+            private nursing education institution in Karachi. We prepare highly
+            skilled, compassionate, and ethical nursing professionals for Pakistan and beyond.
           </p>
           <p className="text-gray-700 dark:text-gray-300">
             {/* From server hosting, WHM/cPanel and deployment to AI-assisted content and paid campaign optimization, I help brands launch faster and convert better. */}
-            Our institute is fully recognized by Pakistan Nursing & Midwifery
-            Council (PNMC) and affiliated with Dow University of Health Sciences
-            (DUHS) and Sindh Nursing Examination Board.
+            Our Generic BSN program is recognized by the Pakistan Nursing &
+            Midwifery Council (PNMC/PNC), with theory, laboratory, and clinical
+            training designed for excellence in patient care.
           </p>
 
           {/* Highlights grid: Key points with icons */}
@@ -105,16 +104,16 @@ const SectionAbout = () => {
             ))}
           </div>
           <Button size={'lg'} variant={'link'} className="mt-10 text-lg cursor-pointer">
-           
+
             Read more
             <ChevronRight className="ml-2 w-5 h-5 -mb-05" />
-            </Button>
+          </Button>
         </div>
       </motion.article>
 
 
 
-      
+
 
       {/* Statistics section: Shows credibility metrics */}
       <div className="max-w-250 mt-16 mx-auto">

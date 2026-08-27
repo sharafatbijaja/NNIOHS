@@ -14,7 +14,7 @@ const AboutPage = () => {
     <PageWrapper>
       <PageTitle
         // title="About Me"
-        title="About NNIOHS"
+        title="About Ikhlas Institute of Nursing"
         subtitle="Get To Know"
         // description="Learn more about my background, skills, and professional journey"
         description="Shaping Compassionate & Competent Nurses Since 2017"

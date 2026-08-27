@@ -40,7 +40,7 @@ const ApplyNowPage = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const message = `Hello! I'm interested in applying for ${formData.program || "a nursing program"} at Naz Nursing Institute. My name is ${formData.name || "[Your Name]"} and my phone number is ${formData.phone || "[Your Phone]"}.`;
+    const message = `Hello! I'm interested in applying for ${formData.program || "a nursing program"} at Ikhlas Institute of Nursing. My name is ${formData.name || "[Your Name]"} and my phone number is ${formData.phone || "[Your Phone]"}.`;
     const whatsappUrl = `https://wa.me/923122815799?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };

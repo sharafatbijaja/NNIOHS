@@ -3,7 +3,7 @@ import { Award, Shield, Zap, Users, Heart, CheckCircle2 } from "lucide-react";
 
 /**
  * Why Choose Us Section Component
- * Displays key benefits for Naz Nursing Institute
+ * Displays key benefits for Ikhlas Institute of Nursing
  */
 const benefits = [
   {
@@ -51,7 +51,7 @@ const SectionWhyChooseUs = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Why Choose Naz Nursing Institute
+            Why Choose Ikhlas Institute of Nursing
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Discover what makes us the preferred choice for aspiring nursing professionals

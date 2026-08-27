@@ -28,14 +28,14 @@ const Footer = () => {
             })}
           </nav>
           <p className="text-sm text-muted-foreground flex items-center gap-1 ">
-             <a href="https://bijaja.com.pk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary transition-colors duration-300">
-               Developed by {''} <LinkIcon className='w-4 h-4 text-destructive fill-destructive' /> Bijaja
-             </a>
+            <a href="https://bijaja.com.pk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary transition-colors duration-300">
+              Developed by {''} <LinkIcon className='w-4 h-4 text-destructive fill-destructive' /> Bilal
+            </a>
           </p>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800 text-center">
-            {/* <p className="text-sm text-muted-foreground"> &copy; 2026 Bijaja. All rights reserved.</p> */}
-            <p className="text-sm text-muted-foreground"> &copy; 2026 NNIOHS. All rights reserved.</p>
+          {/* <p className="text-sm text-muted-foreground"> &copy; 2026 Bijaja. All rights reserved.</p> */}
+          <p className="text-sm text-muted-foreground"> &copy; 2026 Ikhlas Institute of Nursing. All rights reserved.</p>
         </div>
       </div>
     </footer>

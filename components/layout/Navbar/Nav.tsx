@@ -46,7 +46,7 @@ const Nav = ({ openNav }: props) => {
         <div className="hidden lg:flex items-center space-x-10">
           {NavLinks.map((link, index) => {
             const isActive = pathname === link.href;
-            
+
             if (link.name === "Services") {
               return (
                 <div
@@ -54,11 +54,10 @@ const Nav = ({ openNav }: props) => {
                   className="relative group"
                 >
                   <button
-                    className={`font-semibold transition-all flex items-center space-x-1 ${
-                      isServicesActive
-                        ? "text-primary"
-                        : "text-gray-800 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                    }`}
+                    className={`font-semibold transition-all flex items-center space-x-1 ${isServicesActive
+                      ? "text-primary"
+                      : "text-gray-800 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+                      }`}
                   >
                     <span>{link.name}</span>
                     <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
@@ -81,11 +80,10 @@ const Nav = ({ openNav }: props) => {
                             >
                               <span className="text-2xl">{service.icon}</span>
                               <div>
-                                <div className={`text-sm font-semibold ${
-                                  pathname === service.href
-                                    ? "text-primary"
-                                    : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
-                                }`}>
+                                <div className={`text-sm font-semibold ${pathname === service.href
+                                  ? "text-primary"
+                                  : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                                  }`}>
                                   {service.name}
                                 </div>
                                 <div className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mt-1">
@@ -111,11 +109,10 @@ const Nav = ({ openNav }: props) => {
                             >
                               <span className="text-2xl">{service.icon}</span>
                               <div>
-                                <div className={`text-sm font-semibold ${
-                                  pathname === service.href
-                                    ? "text-primary"
-                                    : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
-                                }`}>
+                                <div className={`text-sm font-semibold ${pathname === service.href
+                                  ? "text-primary"
+                                  : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                                  }`}>
                                   {service.name}
                                 </div>
                                 <div className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mt-1">
@@ -155,11 +152,10 @@ const Nav = ({ openNav }: props) => {
                             >
                               <span className="text-2xl">{service.icon}</span>
                               <div>
-                                <div className={`text-sm font-semibold ${
-                                  pathname === service.href
-                                    ? "text-primary"
-                                    : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
-                                }`}>
+                                <div className={`text-sm font-semibold ${pathname === service.href
+                                  ? "text-primary"
+                                  : "text-gray-900 dark:text-white group-hover/link:text-primary transition-colors"
+                                  }`}>
                                   {service.name}
                                 </div>
                                 <div className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mt-1">
@@ -194,11 +190,10 @@ const Nav = ({ openNav }: props) => {
               <Link
                 key={index}
                 href={link.href}
-                className={`font-semibold transition-all ${
-                  isActive
-                    ? "text-primary"
-                    : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                }`}
+                className={`font-semibold transition-all ${isActive
+                  ? "text-primary"
+                  : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+                  }`}
               >
                 {link.name}
               </Link>
@@ -210,7 +205,7 @@ const Nav = ({ openNav }: props) => {
         <div className="flex items-center space-x-4">
           {/* Dark Mode / Light Mode Toggle */}
           <ThemeToggler />
-          
+
           {/* "Get in touch" Call-to-Action Button */}
           <Link
             href="/contact"
@@ -218,7 +213,7 @@ const Nav = ({ openNav }: props) => {
             aria-label="Get in touch button"
           >
             <span className="relative z-20 flex space-x-2 text-sm font-semibold">
-                <span>Contact</span><Handshake className="w-5 h-5" />
+              <span>Contact</span><Handshake className="w-5 h-5" />
             </span>
           </Link>
 

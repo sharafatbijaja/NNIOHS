@@ -3,7 +3,7 @@ import { Users, GraduationCap, Award, Heart, Bed, TrendingUp } from "lucide-reac
 import SectionHeading from "@/components/common/SectionHeading";
 /**
  * Stats Banner Section Component
- * Displays key statistics for Naz Nursing Institute
+ * Displays key statistics for Ikhlas Institute of Nursing
  */
 const SectionStatsBanner = () => {
   const stats = [
@@ -54,7 +54,7 @@ const SectionStatsBanner = () => {
   return (
     <section className="relative">
 
-<div className="container mx-auto px-4">
+      <div className="container mx-auto px-4">
         {/* Section title - "About Me" */}
         <SectionHeading
           title1="Stats That"

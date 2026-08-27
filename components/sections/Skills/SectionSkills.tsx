@@ -43,7 +43,7 @@ const SectionSkills = () => {
       <SectionHeading
         title1="Our"
         title2="Programs"
-        description="Naz Nursing Institute offers nursing education programs designed to shape compassionate healthcare professionals.
+        description="Ikhlas Institute of Nursing offers nursing education programs designed to shape compassionate healthcare professionals.
 •"/>
 
       {/* Skills Grid Container */}

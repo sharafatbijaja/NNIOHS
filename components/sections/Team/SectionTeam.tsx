@@ -6,7 +6,7 @@ import SectionHeading from "@/components/common/SectionHeading";
 
 /**
  * Team Section Component
- * Displays the Principal's message for Naz Nursing Institute
+ * Displays the Principal's message for Ikhlas Institute of Nursing
  */
 const SectionTeam = () => {
   const teamMembers = [
@@ -14,12 +14,12 @@ const SectionTeam = () => {
       name: "Madam Fatima",
       role: "Principal",
       image: "/images/user.jpg",
-      bio: "Nursing is more than a profession — it is a sacred responsibility to care for humanity in its most vulnerable moments. At Naz Nursing Institute, we don't just teach nursing skills; we nurture caring hearts, sharp minds, and strong characters.",
+      bio: "Nursing is more than a profession — it is a sacred responsibility to care for humanity in its most vulnerable moments. At Ikhlas Institute of Nursing, we don't just teach nursing skills; we nurture caring hearts, sharp minds, and strong characters.",
       social: {
         linkedin: "https://linkedin.com",
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
-        email: "mailto:info@nniohs.edu.pk",
+        email: "mailto:info@ikhlasedu.com",
       },
     },
   ];
@@ -37,13 +37,13 @@ const SectionTeam = () => {
           </p>
         </div> */}
         <div className="container mx-auto px-4">
-        {/* Section title - "About Me" */}
-        <SectionHeading
-          title1="Principal's"
-          title2="Message"
-          description="Meet our leader dedicated to compassionate nursing professionals"
-        />
-      </div>
+          {/* Section title - "About Me" */}
+          <SectionHeading
+            title1="Principal's"
+            title2="Message"
+            description="Meet our leader dedicated to compassionate nursing professionals"
+          />
+        </div>
 
         {/* Team Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

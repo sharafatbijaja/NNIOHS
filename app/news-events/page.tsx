@@ -27,7 +27,7 @@ const NewsEventsPage = () => {
       <PageTitle
         title="News & Events"
         subtitle="Stay Updated"
-        description="Latest announcements, upcoming events, and news from NNIOHS"
+        description="Latest announcements, upcoming events, and news from Ikhlas Institute of Nursing"
       />
 
       {/* Latest Announcements */}
@@ -56,7 +56,7 @@ const NewsEventsPage = () => {
             {
               title: "New Clinical Rotation Partnership",
               date: "March 2026",
-              description: "NNIOHS has partnered with Naz General Hospital for enhanced clinical training opportunities.",
+              description: "Ikhlas Institute of Nursing provides practical clinical training through affiliated hospitals.",
               type: "Partnership",
               urgent: false
             },
@@ -229,7 +229,7 @@ const NewsEventsPage = () => {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Celebrating Nursing Excellence</h3>
               <p className="text-gray-700 dark:text-gray-300 mb-6">
-                Every year on May 12th, NNIOHS celebrates International Nurses Day to honor the birth anniversary of Florence Nightingale, the founder of modern nursing. This day is dedicated to recognizing the invaluable contributions of nurses to healthcare.
+                Every year on May 12th, Ikhlas Institute of Nursing celebrates International Nurses Day to honor the birth anniversary of Florence Nightingale, the founder of modern nursing. This day is dedicated to recognizing the invaluable contributions of nurses to healthcare.
               </p>
               <div className="space-y-4">
                 {[

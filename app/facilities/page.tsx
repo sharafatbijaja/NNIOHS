@@ -20,7 +20,7 @@ import {
 
 /**
  * Facilities & Infrastructure Page
- * Showcases all facilities and infrastructure available at NNIOHS
+ * Showcases all facilities and infrastructure available at Ikhlas Institute of Nursing
  */
 const FacilitiesPage = () => {
   return (

@@ -3,7 +3,7 @@ import { Users, GraduationCap, Award, Heart, Bed, TrendingUp } from "lucide-reac
 
 /**
  * Achievements Section Component
- * Displays achievements and milestones for Naz Nursing Institute
+ * Displays achievements and milestones for Ikhlas Institute of Nursing
  */
 const SectionAchievements = () => {
   const achievements = [
